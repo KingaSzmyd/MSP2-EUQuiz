@@ -1,0 +1,50 @@
+.callout-container {
+    height: 100vh;
+
+    background: url('images/EU.jpg') no-repeat bottom right fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+    display: flex;
+    align-items: center;   
+    justify-content: center; 
+
+    position: relative;
+}
+
+
+.content-container { 
+    padding-top: 65px;
+    padding-bottom: 75px;
+}
+
+/* Navbar */
+
+
+.navbar {
+    margin-bottom: 0;
+    width: 100%;
+    border: 0;
+}
+
+.navbar .navbar-toggler {
+    border: 0;
+}
+
+/* Jumbotron */
+
+.jumbotron {
+    background-color: transparent;
+}
+
+.jumbotron h1 {
+    color: white;
+    margin-bottom: 50px;
+}
+
+.jumbotron .lead {
+    color: white;
+    margin: 25px 0;
+}
