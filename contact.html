@@ -10,14 +10,15 @@
         integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous" />
     <link href="style.css" rel="stylesheet" type="text/css" />
     <title>EU Quiz</title>
-    <script type="text/javascript"
-    src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
-</script>
-<script type="text/javascript">
-(function(){
-  emailjs.init("user_TbpCa8haoOHDJ1b6BOP6k");
-})();
-</script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+    (function() {
+    emailjs.init("user_TbpCa8haoOHDJ1b6BOP6k");
+    })();
+    </script>
+    
+
 </head> 
 <body>
    <!---------------------Navbar-------------------------->
@@ -80,12 +81,12 @@
 </div>
   <!---------------------Form -------------------------->
   <div class="center-form col-md-4">
-  <form>
-      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email" required>
-      <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="Name" required>
-      <input type="subject" class="form-control" id="exampleFormControlInput1" placeholder="Subject">
-      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3">Message</textarea>
-      <button type="button" class="btn btn-primary">Send</button>
+  <form onsubmit="return sendMail(this);">
+    <input type="name" name="name" class="form-control" id="name" placeholder="Name" required>
+    <input type="email" name="emailaddress" class="form-control" id="emailaddress" placeholder="Email" required>
+    <input type="subject" name="subject" class="form-control" id="subject" placeholder="Subject">
+    <textarea name="request" class="form-control" id="request" rows="5" required>Message</textarea>
+      <button type="submit" class="btn btn-primary">Send</button>
   </form>
   </div>
 </div>
