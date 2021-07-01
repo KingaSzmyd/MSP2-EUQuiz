@@ -59,36 +59,41 @@
   </nav>
    <!---------------------Callout -------------------------->
   <div class="row">
-      <div class="col-12">
-        <section class="callout jumbotron text-center">
-          <h1 class="jumbotron-header text-muted">Contact Us!</h1>
-          <p class="lead text-muted">If you have any question, use this contact form and write to us!</p>
-        </section>
+    <div class="card-center col-sm-3">
+      <div class="card-contact" style="width: 18rem;">
+        <img src="images/icons/european-union.png" class="card-img-top" alt="...">
       </div>
+    </div>
+    <div class="col-md-6">
+      <section class="callout jumbotron text-center">
+        <h1 class="jumbotron-header-contact text-muted">Contact Us!</h1>
+        <p class="lead text-muted">If you have any question, use this contact form and write to us!</p>
+      </section>
+    </div>
   </div>
   <!---------------------Card -------------------------->
   <div class="row">
-  <div class="col-md-4">
-  <div class="card" style="width: 18rem;">
-    <div class="card-body">
-      <h5 class="card-title">Address</h5>
-      <h6 class="card-title">European Commission press zone</h6>
-      <h6 class="card-subtitle mb-2 text-muted">Berlaymont building</h6>
-      <h6 class="card-subtitle mb-2 text-muted">Rue de la Loi 200</h6>
-      <h6 class="card-subtitle mb-2 text-muted">1049 Brussels</h6>
+    <div class="card-center col-sm-3">
+      <div class="card-contact" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">Address</h5>
+          <h6 class="card-title">European Commission Press Zone</h6>
+          <h6 class="card-subtitle mb-2 text-muted">Berlaymont building</h6>
+          <h6 class="card-subtitle mb-2 text-muted">Rue de la Loi 200</h6>
+          <h6 class="card-subtitle mb-2 text-muted">1049 Brussels</h6>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
-  <!---------------------Form -------------------------->
-  <div class="center-form col-md-4">
-  <form onsubmit="return sendMail(this);">
+  
+  <!---------------------Form --------------------------> 
+  <form class="form col-md-6" onsubmit="return sendMail(this);">
     <input type="name" name="name" class="form-control" id="name" placeholder="Name" required>
     <input type="email" name="emailaddress" class="form-control" id="emailaddress" placeholder="Email" required>
     <input type="subject" name="subject" class="form-control" id="subject" placeholder="Subject">
     <textarea name="request" class="form-control" id="request" rows="5" required>Message</textarea>
-      <button type="submit" class="btn btn-primary">Send</button>
+    <br>
+    <button type="submit" class="btn btn-warning btn-lg">Send</button> 
   </form>
-  </div>
 </div>
    <!---------------------Footer-------------------------->
    <footer>

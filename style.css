@@ -60,6 +60,10 @@
     margin: 25px 0;
 }
 
+.jumbotron-header-contact {
+    padding-top: 60px;
+}
+
 /* Footer */
 
 footer { 
@@ -83,6 +87,26 @@ footer {
     height: 48px;
     margin: 0;
     padding: 0;
+}
+
+/* Address - card*/
+
+
+
+.card-contact {
+    border: none;
+    padding-left: 20px;
+}
+
+
+.form {
+    padding-top: 15px;
+}
+
+button[type="submit"] {
+    margin-top: 0 auto;
+    text-align: center;
+
 }
 
 
