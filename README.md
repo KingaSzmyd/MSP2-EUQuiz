@@ -1,5 +1,5 @@
 # EU QUIZ
-## Do you know the capitals of the countries belonging to European Union?
+## Do you know the capitals of the EU countries?
 
 This project is a promotion of the EU member countries. Going through the quiz the participants need to answer the questions, which describes the capitals of the member countries. Every answer gives a 1 point. In total there are the 27 questions, each question about one member counrty. The questions describe the capitals of the countries belonging to EU. 
 
