@@ -59,7 +59,8 @@
     margin: 25px 0;
 }
 
-.jumbotron-header-contact {
+.jumbotron-header-contact,
+.jumbotron-header-map {
     padding-top: 60px;
 }
 
