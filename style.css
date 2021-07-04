@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
+
 .callout-container {
     height: 100vh;
 
-    background: url('images/EU.jpg') no-repeat bottom right fixed;
+    background: url('images/background/EU.jpg') no-repeat bottom right fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -85,6 +88,12 @@ footer {
 .flag img {
     width: 48px;
     height: 48px;
+}
+
+/* Address - card*/
+
+div#map {
+    min-height: 360px;
 }
 
 /* Address - card*/
