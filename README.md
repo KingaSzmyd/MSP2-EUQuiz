@@ -26,11 +26,11 @@ The Oswald font is the main font used throughout the whole website with Sans Ser
 Imagery is important. The large, background image on the index.html page is use to catch the user's attention. 
 ## Wireframes
 * Web page Wireframe 
- ![Web page Wireframe](/images/wireframes/EUQuiz_WebPage.png)
+ ![Web page Wireframe](/images/wireframes/EUQuiz_WebPage.png){:height="50%" width="50%"}
 * Tablet Wireframe 
- ![Tablet Wireframe](/images/wireframes/EUQuiz_Ipad.png)
+ ![Tablet Wireframe](/images/wireframes/EUQuiz_Ipad.png){:height="50%" width="50%"}
 * Mobile Wireframe 
- ![Mobile Wireframe](/images/wireframes/EUQuiz_Iphone.png)
+ ![Mobile Wireframe](/images/wireframes/EUQuiz_Iphone.png){:height="50%" width="50%"}
 ## Features
 The EU Quiz is a set of 27 questions. The users need to answer all of the questions to get maximum amount of points. Every question describes different capital of European country that belongs to the EU. The quiz is dedicated to users, who would like to check they knowledge about European capitals, but also would like to learn new facts. This quiz might be useful during the travel, also becouse it contains the map with localizations of the European capitals. In regards to any questions, the project contain the email form. 
 
