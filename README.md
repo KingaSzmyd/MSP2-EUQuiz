@@ -18,16 +18,19 @@ The idea of the project is to promote the knowledge about the EU members countri
 1. *As a Frequent User*, I want to check to see if there are any newly added questions to the quiz.
 2. *As a Frequent User*, I want to check to see if there are any new options and updates of the website, for example forums or newsletter I can sign up to. 
 ## Design
-### * Colour Scheme
+### Colour Scheme
 The two main colours used are: yellow, blue and white.
-### * Typography
+### Typography
 The Oswald font is the main font used throughout the whole website with Sans Serif as the fallback font in case for any reason the font isn't being imported into the site correctly. 
-### * Imagery
+### Imagery
 Imagery is important. The large, background image on the index.html page is use to catch the user's attention. 
 ## Wireframes
-* Web page Wireframe ![Web page Wireframe](/images/wireframes/EUQuiz_WebPage.png)
-* Tablet Wireframe ![Tablet Wireframe](/images/wireframes/EUQuiz_Ipad.png)
-* Mobile Wireframe ![Mobile Wireframe](/images/wireframes/EUQuiz_Iphone.png)
+* Web page Wireframe 
+ ![Web page Wireframe](/images/wireframes/EUQuiz_WebPage.png)
+* Tablet Wireframe 
+ ![Tablet Wireframe](/images/wireframes/EUQuiz_Ipad.png)
+* Mobile Wireframe 
+ ![Mobile Wireframe](/images/wireframes/EUQuiz_Iphone.png)
 ## Features
 The EU Quiz is a set of 27 questions. The users need to answer all of the questions to get maximum amount of points. Every question describes different capital of European country that belongs to the EU. The quiz is dedicated to users, who would like to check they knowledge about European capitals, but also would like to learn new facts. This quiz might be useful during the travel, also becouse it contains the map with localizations of the European capitals. In regards to any questions, the project contain the email form. 
 
