@@ -75,7 +75,7 @@ const questions = [
       question: "In which city is the largest (and heaviest) building in the world – Palace of Parliament?",
       optionA: "Paris",
       optionB: "Stockholm",
-      optionC: "Buckarest",
+      optionC: "Buchkarest",
       correctOption: "optionC"
   },
 

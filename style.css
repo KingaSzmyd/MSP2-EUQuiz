@@ -133,73 +133,10 @@ button[type="submit"] {
     padding: 20px 10px 20px 10px; 
 }
 
-/* Quiz area*/
-
-
-
-.question-area {
-    width: 50%;
-    font-size: 2rem;
-    margin: auto;
-    padding: 50px 0;
-}
-
-.question-area span {
-    padding: 0 15px;
-}
-
-.score-area {
-    margin: 5px auto;
-    width: 60%;
-    font-size: 1.2rem;
-}
-
-.controls-area {
-    width: 85%;
-    margin: 30px auto;
-}
-
-#score {
-    color: green;
-    font-weight: bold;
-}
-
-#incorrect {
-    color: red;
-    font-weight: bold;
-}
-
-.answer-message {
-    display: none;
-    font-size: 1rem;
-}
-
-#answer-box {
-    border: none;
-    color: #445361;
-    display: inline-block;
-    height: 40px;
-    width: 80px;
-    font-size: 1.2rem;
-}
-
-.scores {
-    display: inline-block;
-    padding: 25px;
-}
-
-/* --------- Buttons */
-
-
-.btn:focus {
-    outline: none;
-}
-
-/* --------- test */
-
+/* Quiz*/
 
 .game-quiz-container{
-        background: lightgrey;
+        background:  #001489;
         box-sizing: border-box;
         width: 85%;
         height: 65vh;
@@ -207,13 +144,14 @@ button[type="submit"] {
         max-width: 830px;
         margin-left: auto;
         margin-right: auto;
+        margin-top: 30px;
         padding: 1%;
-        border: solid darkgray;
         align-items: center;
-        justify-content: space-around;
         display: flex;
         flex-direction: column;
         border-radius: 30px;
+        color: white; 
+        letter-spacing: 2px;
     }
 
 .game-details-container{
@@ -222,6 +160,8 @@ button[type="submit"] {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    color: #f5e617;
+    font-weight: bold;
 }
 
 .game-details-container h1{
@@ -229,7 +169,7 @@ button[type="submit"] {
 }
 
 .game-question-container{
-    width: 80%;
+    width: 60%;
     height: 8rem;
     display: flex;
     align-items: center;
@@ -244,7 +184,7 @@ button[type="submit"] {
 }
 
 .game-options-container{
-    width: 80%;
+    width: 50%;
     height: 12rem;
     display: flex;
     flex-wrap: wrap;
@@ -255,7 +195,7 @@ button[type="submit"] {
 .game-options-container span{
     width: 45%;
     height: 3rem;
-    background-color:#077EF5 ;
+    background-color:#f5e617;
     border-radius: 20px;
     overflow: hidden;
 }
@@ -268,14 +208,15 @@ span label{
     cursor: pointer;
     transition: transform 0.3s;
     font-weight: 600;
-    color: white;
+    color:#5F6A6A;
+    font-weight: bold;
 }
 
 span label:hover{
     -ms-transform: scale(1.12);
     -webkit-transform: scale(1.12);
     transform: scale(1.12);
-    color: white;
+    color:#fafafa;
 }
 
 input[type="radio"] {
@@ -285,7 +226,7 @@ input[type="radio"] {
 
 
 input[type=radio]:checked ~ .option {
-	background: paleturquoise;
+	background: #FD9805;
 }
 
 .next-button-container{
@@ -299,14 +240,13 @@ input[type=radio]:checked ~ .option {
     height: 2rem;
     border-radius: 10px;
     background: none;
-    color: white;
+    color:gray;
     font-weight: 600;
-    background-color: #F5C607 ;
     cursor: pointer;
     outline: none;
 }
 .next-button-container button:hover{
-    background-color: rgb(143, 93, 93);
+    background-color: #3498DB ;
 }
 
 .modal-container{
