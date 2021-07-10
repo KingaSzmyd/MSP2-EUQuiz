@@ -222,14 +222,13 @@ let shuffledQuestions = [] //empty array to hold shuffled selected questions
 
 function handleQuestions() { 
   //function to shuffle and push 10 questions to shuffledQuestions array
-  while (shuffledQuestions.length <= 26) {
+  while (shuffledQuestions.length <= 9) {
       const random = questions[Math.floor(Math.random() * questions.length)]
       if (!shuffledQuestions.includes(random)) {
           shuffledQuestions.push(random)
       }
   }
 }
-
 
 let questionNumber = 1
 let playerScore = 0  
@@ -249,11 +248,11 @@ function NextQuestion(index) {
 
 }
 
-
 function checkForAnswer() {
-  const currentQuestion = shuffledQuestions[indexNumber] //gets current Question 
-  const currentQuestionAnswer = currentQuestion.correctOption //gets current Question's answer
-  const options = document.getElementsByName("option"); //gets all elements in dom with name of 'option' (in this the radio inputs)
+    //function for checking answers
+  const currentQuestion = shuffledQuestions[indexNumber] //get current question
+  const currentQuestionAnswer = currentQuestion.correctOption //get current question's answer
+  const options = document.getElementsByName("option"); //get all element in dom with name of 'option'
   let correctOption = null
 
   options.forEach((option) => {
@@ -271,7 +270,7 @@ function checkForAnswer() {
   //checking if checked radio button is same as answer
   options.forEach((option) => {
       if (option.checked === true && option.value === currentQuestionAnswer) {
-          document.getElementById(correctOption).style.backgroundColor = "green"
+          document.getElementById(correctOption).style.backgroundColor = "#33CF09"
           playerScore++
           indexNumber++
           //set to delay question number till when next question loads
@@ -282,8 +281,8 @@ function checkForAnswer() {
 
       else if (option.checked && option.value !== currentQuestionAnswer) {
           const wrongLabelId = option.labels[0].id
-          document.getElementById(wrongLabelId).style.backgroundColor = "red"
-          document.getElementById(correctOption).style.backgroundColor = "green"
+          document.getElementById(wrongLabelId).style.backgroundColor = "#F52E06"
+          document.getElementById(correctOption).style.backgroundColor = "#33CF09"
           wrongAttempt++
           indexNumber++
           //set to delay question number till when next question loads
@@ -293,8 +292,6 @@ function checkForAnswer() {
       }
   })
 }
-
-
 
 //called when the next button is called
 function handleNextQuestion() {
@@ -320,7 +317,6 @@ function resetOptionBackground() {
   })
 }
 
-// unchecking all radio buttons for next question(can be done with map or foreach loop also)
 function unCheckRadioButtons() {
   const options = document.getElementsByName("option");
   for (let i = 0; i < options.length; i++) {
@@ -336,15 +332,15 @@ function handleEndGame() {
   // condition check for player remark and remark color
   if (playerScore <= 3) {
       remark = "Bad Grades, Keep Practicing."
-      remarkColor = "red"
+      remarkColor = "#33CF09"
   }
   else if (playerScore >= 4 && playerScore < 7) {
       remark = "Average Grades, You can do better."
-      remarkColor = "orange"
+      remarkColor = "#F96F15"
   }
   else if (playerScore >= 7) {
       remark = "Excellent, Keep the good work going."
-      remarkColor = "green"
+      remarkColor = "#F52E06"
   }
   const playerGrade = (playerScore / 10) * 100
 
