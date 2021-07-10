@@ -59,318 +59,82 @@
             </section>
         </div>
     </div>
-  <!---------------------Cards-------------------------->
-  <div class="row">
-    <div class="col-sm-3">
-      <div class="card">
-        <div class="card-body">
-          <button type="button" id="question" class="btn bg-warning btn-dark">QUESTION 1</button>
-          <p class="card-text">The only capital city in the world, which produce significant quantities of wine within its city limits. Often called the City of Music, becouse famous composers have lived here, e.g.  Mozart, Beethoven, Straus. Known also as the City of Dreams, because of its citizen Sigmund Freud.</p>
-          <a href="#" class="btn btn-primary">Amsterdam</a>
-          <a href="#" class="btn btn-primary">Berlin</a>
-          <a href="#" class="btn btn-primary">Vienna</a>
+  <!---------------------Quiz-------------------------->
+  <body onload="NextQuestion(0)">
+    <main>
+        <!-- creating a modal for when quiz ends -->
+        <div class="modal-container" id="score-modal">
+          
+            <div class="modal-content-container">
+              
+                <h1>Congratulations, Quiz Completed.</h1>
+              
+                <div class="grade-details">
+                    <p>Attempts : 10</p>
+                    <p>Wrong Answers : <span id="wrong-answers"></span></p>
+                    <p>Right Answers : <span id="right-answers"></span></p>
+                    <p>Grade : <span id="grade-percentage"></span>%</p>
+                    <p ><span id="remarks"></span></p>
+                </div>
+              
+                <div class="modal-button-container">
+                    <button onclick="closeScoreModal()">Continue</button>
+                </div>
+              
+            </div>
         </div>
-      </div>
-    </div>
-    <div class="col-sm-3">
-      <div class="card">
-        <div class="card-body">
-          <button type="button" id="question" class="btn bg-warning btn-dark">QUESTION 2</button>
-          <p class="card-text">This is the last capital city in the world, divided by a border zone. It is a historical city with walled old town and gorgeous landmarks. That’s the home to the Oldest Wine Brand in the world and the Oldest Perfume Bottle in the world. The official language is Greek. </p>
-          <a href="#" class="btn btn-primary">Athens</a>
-          <a href="#" class="btn btn-primary">Nicosia</a>
-          <a href="#" class="btn btn-primary">Lisbon</a>
+
+        <div class="game-quiz-container">
+          
+            <div class="game-details-container">
+                <h1>Score : <span id="player-score"></span> / 10</h1>
+                <h1> Question : <span id="question-number"></span> / 10</h1>
+            </div>
+
+            <div class="game-question-container">
+                <h1 id="display-question"></h1>
+            </div>
+
+            <div class="game-options-container">
+              
+               <div class="modal-container" id="option-modal">
+                 
+                    <div class="modal-content-container">
+                         <h1>Please Pick An Option</h1>
+                      
+                         <div class="modal-button-container">
+                            <button onclick="closeOptionModal()">Continue</button>
+                        </div>
+                      
+                    </div>
+                 
+               </div>
+              
+                <span>
+                    <input type="radio" id="option-one" name="option" class="radio" value="optionA" />
+                    <label for="option-one" class="option" id="option-one-label"></label>
+                </span>
+              
+
+                <span>
+                    <input type="radio" id="option-two" name="option" class="radio" value="optionB" />
+                    <label for="option-two" class="option" id="option-two-label"></label>
+                </span>
+              
+
+                <span>
+                    <input type="radio" id="option-three" name="option" class="radio" value="optionC" />
+                    <label for="option-three" class="option" id="option-three-label"></label>
+                </span>
+            </div>
+
+            <div class="next-button-container">
+                <button onclick="handleNextQuestion()">Next Question</button>
+            </div>
+
         </div>
-      </div>
-    </div>
-    <div class="col-sm-3">
-      <div class="card">
-        <div class="card-body">
-          <button type="button" id="question" class="btn bg-warning btn-dark">QUESTION 3</button>
-          <p class="card-text">The city famous from its: beer, waffles, french fries and chocolate! Well known also as the capital of Europe. EU institutions like the European Commission, the European Council, Council of the European Union and European Parliament call it “home”. </p>
-          <a href="#" class="btn btn-primary">Brussels</a>
-          <a href="#" class="btn btn-primary">Paris</a>
-          <a href="#" class="btn btn-primary">London</a>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-3">
-      <div class="card">
-        <div class="card-body">
-          <button type="button" id="question" class="btn bg-warning btn-dark">QUESTION 4</button>
-          <p class="card-text">This city has: the largest train station in Europe, more ‚Döner‘ Kebap shops than Istanbul, over 180 km of navigable waterways within the city, its own beer, called – Weiße! It is a home to the longest open-air gallery in the world - The East Side Gallery. </p>
-          <a href="#" class="btn btn-primary">Vienna</a>
-          <a href="#" class="btn btn-primary">Brussels</a>
-          <a href="#" class="btn btn-primary">Berlin</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-sm-3">
-      <div class="card">
-        <div class="card-body">
-          <button type="button" id="question" class="btn bg-warning btn-dark">QUESTION 5</button>
-          <p class="card-text">The city has more than 900 churches and 280 fountains. Nearly 700,000 euros worth of coins are tossed into one of the most famous one each year. The mascot of the capital is a she-wolf that cared for brothers, the mythological founders of the city. </p>
-          <a href="#" class="btn btn-primary">Rome</a>
-          <a href="#" class="btn btn-primary">Lisbon</a>
-          <a href="#" class="btn btn-primary">Madrid</a>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-3">
-      <div class="card">
-        <div class="card-body">
-          <button type="button" id="question" class="btn bg-warning btn-dark">QUESTION 6</button>
-          <p class="card-text">The city was founded by the Thracian tribes and was ruled and occupied by many different superpowers. Today, this is a modern city, where the history could be seen everywhere, from the ground floor of a hotel to the subway stations, becouse this capital is built on top of Roman ruins.</p>
-          <a href="#" class="btn btn-primary">Athens</a>
-          <a href="#" class="btn btn-primary">Sofia</a>
-          <a href="#" class="btn btn-primary">Rome</a>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-3">
-      <div class="card">
-        <div class="card-body">
-          <button type="button" id="question" class="btn bg-warning btn-dark">QUESTION 7</button>
-          <p class="card-text">Over 200 old-school gas lamps are lighting up the city each night since their installation in 1863. Many places here are named after bears (medvjedi), e.g. Medvedgrad Castle. The city has the world's shortest public transport vehicle and very own solar system.  </p>
-          <a href="#" class="btn btn-primary">Vilnius</a>
-          <a href="#" class="btn btn-primary">Warsaw</a>
-          <a href="#" class="btn btn-primary">Zagreb</a>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-3">
-      <div class="card">
-        <div class="card-body">
-          <button type="button" id="question" class="btn bg-warning btn-dark">QUESTION 8</button>
-          <p class="card-text">The entire city is a UNESCO World heritage site. It is a smallest European capital. The city is noted for its fortifications, consisting of bastions, curtains and cavaliers and the Baroque palaces. It was named after the Grand Master of the Knights.  </p>
-          <a href="#" class="btn btn-primary">Athens</a>
-          <a href="#" class="btn btn-primary">Rome</a>
-          <a href="#" class="btn btn-primary">Vallette</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-sm-3">
-      <div class="card">
-        <div class="card-body">
-          <button type="button" id="question" class="btn bg-warning btn-dark">QUESTION 9</button>
-          <p class="card-text">This city is famous from its beer SPA and pork knuckle. The locals consume the most beer per capita in the world. It’s also a home for the largest castle in the world and a graffiti wall devoted to John Lennon, which since 1980 has been repainted numerous times.</p>
-          <a href="#" class="btn btn-primary">Prague</a>
-          <a href="#" class="btn btn-primary">London</a>
-          <a href="#" class="btn btn-primary">Warsaw</a>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-3">
-      <div class="card">
-        <div class="card-body">
-          <button type="button" id="question" class="btn bg-warning btn-dark">QUESTION 10</button>
-          <p class="card-text">This capital is called “Little Paris”, mostly due to the strikingly similar grand architecture. It is a home to one of the largest (and heaviest) building in the world – Palace of Parliament, and to the longest boulevard in Europe. The city has been named after a shepherd.  </p>
-          <a href="#" class="btn btn-primary">Bratislava</a>
-          <a href="#" class="btn btn-primary">Bucharest</a>
-          <a href="#" class="btn btn-primary">Tallin</a>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-3">
-      <div class="card">
-        <div class="card-body">
-          <button type="button" id="question" class="btn bg-warning btn-dark">QUESTION 11</button>
-          <p class="card-text">This capital is called the “Happiest City” in the world , it’s full of liquorices sweets and “wienerbrød". It is also famous from its dark bread sandwiches – smørrebrød and marvelous fairy-tales. It is a home to the Little Mermaid, “HYGGE” and Carlsberg beer. </p>
-          <a href="#" class="btn btn-primary">Berlin</a>
-          <a href="#" class="btn btn-primary">Warsaw</a>
-          <a href="#" class="btn btn-primary">Copenhagen</a>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-3">
-      <div class="card">
-        <div class="card-body">
-          <button type="button" id="question" class="btn bg-warning btn-dark">QUESTION 12</button>
-          <p class="card-text">The capital became the venue for the award of the first Nobel Prizes, in the 1901. It is a home to the Globe Arena, currently the largest hemispherical building in the world. The total absence of heavy industry makes it also be one of the world’s cleanest metropolises.  </p>
-          <a href="#" class="btn btn-primary">Sweden</a>
-          <a href="#" class="btn btn-primary">Copenhagen</a>
-          <a href="#" class="btn btn-primary">Helsinki</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-sm-3">
-      <div class="card">
-        <div class="card-body">
-          <button type="button" id="question" class="btn bg-warning btn-dark">QUESTION 13</button>
-          <p class="card-text">No building in this city is taller than 96 m. It is a home to the largest synagogue in the Europe and to the oldest metro line in the continent. The city has a secret subterranean world, beneath it lies over 200 caves. There are more thermal water springs than in any other capital city.  </p>
-          <a href="#" class="btn btn-primary">Riga</a>
-          <a href="#" class="btn btn-primary">Vilnius</a>
-          <a href="#" class="btn btn-primary">Budapest</a>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-3">
-      <div class="card">
-        <div class="card-body">
-          <button type="button" id="question" class="btn bg-warning btn-dark">QUESTION 14</button>
-          <p class="card-text">The city has the secret passages, under the Old Town, there is a labyrinth of 17th century tunnels. The favorite local drink is a sweet liqueur, invented in the 60’s. With the use of natural ingredients, it presents a smooth but bitter flavor, with aromas of cinnamon, toffee, citrus and warm spices. </p>
-          <a href="#" class="btn btn-primary">Copenhagen</a>
-          <a href="#" class="btn btn-primary">Tallin</a>
-          <a href="#" class="btn btn-primary">Sweden </a>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-3">
-      <div class="card">
-        <div class="card-body">
-          <button type="button" id="question" class="btn bg-warning btn-dark">QUESTION 15</button>
-          <p class="card-text">The capital is called the “Daughter of the Baltic” or the “White City of the North”, because many of its buildings are constructed of a local light-colored granite. The capital has two official languages and is the world’s coldest capital. </p>
-          <a href="#" class="btn btn-primary">Helsinki</a>
-          <a href="#" class="btn btn-primary">Stockholm</a>
-          <a href="#" class="btn btn-primary">Riga</a>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-3">
-      <div class="card">
-        <div class="card-body">
-          <button type="button" id="question" class="btn bg-warning btn-dark">QUESTION 16</button>
-          <p class="card-text">The city is notable among Europe’s capital cities not for its size, its age, or its beauty but for its indestructibility. It is a phoenix that has risen repeatedly from the ashes of war. One of the most famous people born in this capital was Maria Skłodowska-Curie. </p>
-          <a href="#" class="btn btn-primary">Berlin</a>
-          <a href="#" class="btn btn-primary">Warsaw</a>
-          <a href="#" class="btn btn-primary">Budapest</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-sm-3">
-      <div class="card">
-        <div class="card-body">
-          <button type="button" id="question" class="btn bg-warning btn-dark">QUESTION 17</button>
-          <p class="card-text">It is the Europe’s oldest capital city. It was the birthplace of democracy. It was the first European Capital of Culture. Every year is visited by 18 mln tourists. It is the only city, that has experienced all types of government: monarchy, democracy, socialism, capitalism, communism.  </p>
-          <a href="#" class="btn btn-primary">Lisbon</a>
-          <a href="#" class="btn btn-primary">Athens</a>
-          <a href="#" class="btn btn-primary">Rome</a>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-3">
-      <div class="card">
-        <div class="card-body">
-          <button type="button" id="question" class="btn bg-warning btn-dark">QUESTION 18</button>
-          <p class="card-text">In this city, there is the only bridge in Europe that have the same width and length. The capital has a name of the UNESCO City of Literature. It is a home to the largest park in Europe and the widest street in Europe (49 m). The capital name in old local language means “Black Pool”. </p>
-          <a href="#" class="btn btn-primary">Dublin</a>
-          <a href="#" class="btn btn-primary">Berlin</a>
-          <a href="#" class="btn btn-primary">London</a>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-3">
-      <div class="card">
-        <div class="card-body">
-          <button type="button" id="question" class="btn bg-warning btn-dark">QUESTION 19</button>
-          <p class="card-text">The city’s historical center is the UNESCO World Heritage Site, noted for its Art Nouveau/Jugendstil architecture and 19th century wooden architecture. The city is located on both banks of the river Daugava which separates it into two parts, Vecriga and Pardaugava. </p>
-          <a href="#" class="btn btn-primary">Stockholm</a>
-          <a href="#" class="btn btn-primary">Helsinki</a>
-          <a href="#" class="btn btn-primary">Riga</a>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-3">
-      <div class="card">
-        <div class="card-body">
-          <button type="button" id="question" class="btn bg-warning btn-dark">QUESTION 20</button>
-          <p class="card-text">The city is lying on 8 hills. It is a home to the one of the world’s most top-secret recipes: Pastéis da nata, only 3 people in the world know it. You can find there the smallest bookstores in the world. The city's oceanarium  has the largest indoor tank in Europe. </p>
-          <a href="#" class="btn btn-primary">Lisbon</a>
-          <a href="#" class="btn btn-primary">Madrid</a>
-          <a href="#" class="btn btn-primary">Ljubljana</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-sm-3">
-      <div class="card">
-        <div class="card-body">
-          <button type="button" id="question" class="btn bg-warning btn-dark">QUESTION 21</button>
-          <p class="card-text">The Old Town in this city was declared as the UNESCO World Heritage Site. Nicknames of this capital are: “Athens of the North” and “Rome of the North“. The city was recognized by the Guinness World Records as the site, where the largest coin pyramid ever was created. </p>
-          <a href="#" class="btn btn-primary">Zagreb</a>
-          <a href="#" class="btn btn-primary">Vilnius</a>
-          <a href="#" class="btn btn-primary">Ljubljana</a>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-3">
-      <div class="card">
-        <div class="card-body">
-          <button type="button" id="question" class="btn bg-warning btn-dark">QUESTION 22</button>
-          <p class="card-text">The city stands on 11 million poles. Its canals are full of bicycles. The houses in the capital are narrow because, back in the 17th century, the locals were taxed on the width of their property. The city features the most museums per capita in the world. </p>
-          <a href="#" class="btn btn-primary">Warsaw</a>
-          <a href="#" class="btn btn-primary">Ljubljana</a>
-          <a href="#" class="btn btn-primary">Amsterdam</a>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-3">
-      <div class="card">
-        <div class="card-body">
-          <button type="button" id="question" class="btn bg-warning btn-dark">QUESTION 23</button>
-          <p class="card-text">It is one of the 3 official EU capitals and serves as the seat for the European Court of Justice. It’s called “Gibraltar of the North”. The city was recognized by the Guinness World Records for local Restaurant Chiggeri, which offers a wine life of 1,746 distinct wines. </p>
-          <a href="#" class="btn btn-primary">Luxembourg City</a>
-          <a href="#" class="btn btn-primary">Prague</a>
-          <a href="#" class="btn btn-primary">Paris</a>
-        </div>
-      </div> 
-    </div>
-    <div class="col-sm-3">
-      <div class="card">
-        <div class="card-body">
-          <button type="button" id="question" class="btn bg-warning btn-dark">QUESTION 24</button>
-          <p class="card-text">It is a green capital of a green country. The city of thousands of events, is surrounded by parks and areas of protected nature. It is also known as “Green capital of Dragons”. It is the only capital where the US and Russian embassies face each other. </p>
-          <a href="#" class="btn btn-primary">Bratislava</a>
-          <a href="#" class="btn btn-primary">Ljubljana</a>
-          <a href="#" class="btn btn-primary">Stockholm</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-sm-4">
-      <div class="card">
-        <div class="card-body">
-          <button type="button" id="question" class="btn bg-warning btn-dark">QUESTION 25</button>
-          <p class="card-text">It is the second biggest city in the European Union. It is a home to the football club, that according to FIFA, is the world’s most successful football club of the 20th century. The city has more cloudless days than virtually any other city in Europe. It’s also the highest capital city in Europe. Its name comes from the Arabic “magerit” which means ‘place of many streams’. </p>
-          <a href="#" class="btn btn-primary">Madrid</a>
-          <a href="#" class="btn btn-primary">Berlin</a>
-          <a href="#" class="btn btn-primary">Paris</a>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-4">
-      <div class="card">
-        <div class="card-body">
-          <button type="button" id="question" class="btn bg-warning btn-dark">QUESTION 26</button>
-          <p class="card-text">The nicknames for this capital are: “A little Big City”, “Beauty on the Danube” or “The Suburb of Vienna”. It is the world’s only national capital that shares its city borders with two independent countries. The capital is nestled beside the Danube River and the Little Carpathian Mountains. The city breeds a fusion where: new meets old, east meets west and green spaces meet urban locales. </p>
-          <a href="#" class="btn btn-primary">Zagreb</a>
-          <a href="#" class="btn btn-primary">Pragua</a>
-          <a href="#" class="btn btn-primary">Bratislava</a>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-4">
-      <div class="card">
-        <div class="card-body">
-          <button type="button" id="question" class="btn bg-warning btn-dark">QUESTION 27</button>
-          <p class="card-text">The capital is called “City of Light” and has the biggest museum of art in the world. There is one dog for every seventh citizen. It is a home to the fashion, great fashion designers and world's known brands. The first in the world “Bloody Merry” cocktail was invented there. The locals declined Tom Cruise’s request for becoming an honorary citizen. </p>
-          <a href="#" class="btn btn-primary">Madrid</a>
-          <a href="#" class="btn btn-primary">Paris</a>
-          <a href="#" class="btn btn-primary">London</a>
-        </div>
-      </div>
-    </div> 
-   </div> 
+    </main>
+</body>
 <!---------------------Footer-------------------------->
       <footer>
         <div class="row">
@@ -463,5 +227,8 @@
           </div>
         </div>
       </footer>
+  <script src="js/quiz.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
 </body>
 </html>
