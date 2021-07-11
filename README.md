@@ -26,28 +26,28 @@ The Oswald font is the main font used throughout the whole website with Sans Ser
 Imagery is important. The large, background image on the index.html page is use to catch the user's attention. 
 ## Wireframes
 * Web page Wireframe 
- ![Web page Wireframe](../images/wireframes/EUQuiz_WebPage.png)
+ ![Web page Wireframe]('assets/images/wireframes/EUQuiz_WebPage.png')
 * Tablet Wireframe 
- ![Tablet Wireframe](../images/wireframes/EUQuiz_Ipad.png)
+ ![Tablet Wireframe](assets/images/wireframes/EUQuiz_Ipad.png)
 * Mobile Wireframe 
- ![Mobile Wireframe](../images/wireframes/EUQuiz_Iphone.png)
+ ![Mobile Wireframe](assets/images/wireframes/EUQuiz_Iphone.png)
 ## Features
 The EU Quiz is a set of 27 questions, but during one deal the participants have to answer 10 random questions. The users need to answer all of the questions to get maximum amount of points. Every question describes different capital of european country that belongs to the EU. The quiz is dedicated to users, who would like to check they knowledge about european capitals, but also would like to learn new facts about them. This quiz might be useful during the travel, also becouse it contains the map with localizations of the european capitals. If the users have any concerns or questions, they can use the email form to contact with the organisation.
 * Responsive on all device sizes
 * Interactive elements
 ### Existing Features
-#### * Navigation Bar
+#### *Navigation Bar
 * Featured on all four pages, the full responsive navigation bar includes links to the Home page, Quiz page, Map page and Contact page and the active icons to the social media, the links of them will open in new tabs. . Navigation bar is identical in each page to allow for easy navigation.
 * This section will allow the user to easily navigate from page to page across all devices without having to revert back to the previous page via the ‘back’ button.
-#### * The home page 
+#### *The home page 
 * The home page includes a background image and the START QUIZ button, that allows redirection to the quiz page. 
-#### * The quiz page
+#### *The quiz page
 * The quiz page contains the quiz form with the questions, that encourages user imediately to take part with the game.  
-#### * The map page
+#### *The map page
 * The map page contains responsive Google map with pointers of european capitals. That helps users to find the looking city in the easy way.
-#### * The contact page
+#### *The contact page
 * The contact page gives the information about the organisation address and contains contact form, that allows to send the direct email and easly contact with the organisation. 
-#### * The footer section 
+#### *The footer section 
 * The footer section includes flags of 27 countries of EU. The icons are active and redirect the user, after clicking on them, to the Wikipedia pages for getting more information about each country. The links will open in new tabs. Footer  is identical in each page to allow for easy navigation.
 
 ### Features Left to Implement
@@ -62,18 +62,88 @@ The EU Quiz is a set of 27 questions, but during one deal the participants have 
 ### Frameworks, Libraries & Programs Used
 1. [Bootstrap 5.0.2.](https://getbootstrap.com/docs/versions/):
 * Bootstrap was used to assist with the responsiveness and styling of the website. Navbar and responsive images were created by using Bootstrap libraries.
-1. [Hover.css](https://developer.mozilla.org/en-US/docs/Web/CSS/:hover):
+2. [Hover.css](https://developer.mozilla.org/en-US/docs/Web/CSS/:hover):
 * Hover.css was used on the buttons in the quiz to add the changing color options while being hovered over.
-1. [Google Fonts](https://fonts.google.com/):
+3. [Google Fonts](https://fonts.google.com/):
 * Google fonts were used to import the 'Oswald' font into the style.css file which is used on all pages throughout the project.
-1. [Font Awesome](https://fontawesome.com/):
+4. [Font Awesome](https://fontawesome.com/):
 * Font Awesome was used on all pages throughout the website to add icons of social media for aesthetic and UX purposes.
-1. [Git](https://www.gitpod.io/):
+5. [Git](https://www.gitpod.io/):
 * Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
-1. [GitHub](https://github.com/):
+6. [GitHub](https://github.com/):
 * GitHub is used to store the projects code after being pushed from Git.
-1.	[Balsamiq](https://balsamiq.com/):
+7.	[Balsamiq](https://balsamiq.com/):
 * Balsamiq was used to create the wireframes during the design process.
+## Testing
+1. Browsers:
+* Chrome
+* Safari 
+2. Bugs: 
+3. Family & Friends
+The Website was tested on Google Chrome and Safari browsers.
+The website was viewed on a variety of devices such as Desktop, Laptop, iPhone7, iPhone 8 & iPhoneX.
+
+In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your project’s features and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
+In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
+You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
+If this section grows too long, you may want to split it off into a separate file and link to it from here.
+## Validator Testing
+* HTML
+o	No errors were returned when passing through the official W3C validator
+* CSS
+o	No errors were found when passing through the official (Jigsaw) validator
+* JavaScript 
+
+•	The Website was tested on Google Chrome, Internet Explorer, Microsoft Edge and Safari browsers.
+•	The website was viewed on a variety of devices such as Desktop, Laptop, iPhone7, iPhone 8 & iPhoneX.
+•	A large amount of testing was done to ensure that all pages were linking correctly.
+•	Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues.
+### Unfixed Bugs
+You will need to mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a big variable to consider, paucity of time and difficulty understanding implementation is not a valid reason to leave bugs unfixed.
+Deployment
+This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub)
+•	The site was deployed to GitHub pages. The steps to deploy are as follows:
+o	In the GitHub repository, navigate to the Settings tab
+o	From the source section drop-down menu, select the Master Branch
+o	Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
+The live link can be found here - https://code-institute-org.github.io/love-running-2.0/index.html
+
+### Credits
+#### Images:
+* [Flaticon](https://www.flaticon.com/packs/countrys-flags) - source of all flags images used on the website. 
+* [Unsplash](https://unsplash.com/) - the background image on the home page.
+#### Content:
+* [Wikipedia](https://www.wikipedia.org/) - information about the european countries.
+* Information for the quiz questions coming from: [Kelayann.com](http://www.kaleyann.com/10-fun-facts-vienna/), [Meininger-hotels.com](https://www.meininger-hotels.com/blog/en/fun-facts-brussels/), [Travelwithwinny.com](https://www.travelwithwinny.com/bulgaria-sofia-travel/), [Timeout.com](https://www.timeout.com/croatia/news/10-secret-facts-about-zagreb-050920), [Cyhealthservices.com](https://www.cyhealthservices.com/news-events/39-5-interesting-facts-about-cyprus-you-probably-didn-t-know), [St-christophers.co.uk](https://www.st-christophers.co.uk/travel-blog/cool-facts-you-probably-didnt-know-about-prague), [Copenhagendowntown.com](https://www.copenhagendowntown.com/blog/8-fun-facts-about-copenhagen), [Blog.radissonblu.com](https://blog.radissonblu.com/tallinns-fun-facts/), [Justfunfacts.com](http://justfunfacts.com/interesting-facts-about-helsinki/), [Blog.aifsabroad.com](https://blog.aifsabroad.com/2019/05/10/10-fun-facts-about-athens-greece-that-you-might-not-know/), [Travelnotsandbeyond.com](https://travelnotesandbeyond.com/interesting-things-about-budapest/), [Viptaxis.ie](https://viptaxis.ie/fun-facts-dublin-2/), [Worldstrides.com](https://worldstrides.com/blog/2016/10/12-interesting-facts-about-rome/), [Isolatetraveller.com](https://www.isolatedtraveller.com/20-interesting-facts-about-riga/), [Worldscapitalcities.com](https://www.worldscapitalcities.com/capital-facts-for-vilnius-lithuania/), [Welcome-center-malta.com](https://www.welcome-center-malta.com/10-facts-about-valletta-you-didnt-know/), [Getyourguide.com](https://www.getyourguide.com/magazine/2020/03/amsterdam-fun-facts/), [Theculturetrip.com](https://theculturetrip.com/europe/portugal/lisbon/articles/10-facts-about-lisbon-that-you-never-knew/), [Solosophie.com](https://www.solosophie.com/fun-cool-weird-interesting-facts-about-bucharest/), [Total-slovenia-news.com](https://www.total-slovenia-news.com/lifestyle/485-25-things-to-know-about-ljubljana), [Traveltalktours.com](https://www.traveltalktours.com/11-astounding-facts-madrid/), [Nordicexperience.com](https://www.nordicexperience.com/know-25-fun-interesting-facts-stockholm-sweden/)
+### Media:
+* [Europa.eu](https://europa.eu/european-union/about-eu/symbols/anthem_en) - audio file with european anthem used, when the quiz is completed.
+
+
+In this section you need to reference where you got your content, media and extra help from. It is common practice to use code from other repositories and tutorials, however, it is important to be very specific about these sources to avoid plagiarism.
+You can break the credits section up into Content and Media, depending on what you have included in your project.
+Content
+•	The text for the Home page was taken from Wikipedia Article A
+•	Instructions on how to implement form validation on the Sign Up page was taken from Specific YouTube Tutorial
+•	The icons in the footer were taken from Font Awesome
+Media
+•	The photos used on the home and sign up page are from This Open Source site
+•	The images used for the gallery page were taken from this other open source site
+Congratulations on completing your Readme, you have made another big stride in the direction of being a developer!
+Other General Project Advice
+Below you will find a couple of extra tips that may be helpful when completing your project. Remember that each of these projects will become part of your final portfolio so it’s important to allow enough time to showcase your best work!
+•	One of the most basic elements of keeping a healthy commit history is with the commit message. When getting started with your project, read through this article by Chris Beams on How to Write a Git Commit Message
+o	Make sure to keep the messages in the imperative mood
+•	When naming the files in your project directory, make sure to consider meaningful naming of files, point to specific names and sections of content.
+o	For example, instead of naming an image used ‘image1.png’ consider naming it ‘landing_page_img.png’. This will ensure that there are clear file paths kept.
+•	Do some extra research on good and bad coding practices, there are a handful of useful articles to read, consider reviewing the following list when getting started:
+o	Writing Your Best Code
+o	HTML & CSS Coding Best Practices
+o	Google HTML/CSS Style Guide
+Getting started with your Portfolio Projects can be daunting, planning your project can make it a lot easier to tackle, take small steps to reach the final outcome and enjoy the process!
+
+
+
+
 
 
 
