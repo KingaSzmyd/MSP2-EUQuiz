@@ -10,15 +10,12 @@
         integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous" />
     <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
     <title>EU Quiz</title>
-
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
     <script type="text/javascript">
       (function() {
         emailjs.init("user_TbpCa8haoOHDJ1b6BOP6k");
       })();
     </script>
-    
-
 </head> 
 <body>
    <!---------------------Navbar-------------------------->
@@ -69,7 +66,7 @@
       </section>
     </div>
   </div>
-  <!---------------------Card -------------------------->
+  <!---------------------Card-------------------------->
   <div class="row">
     <div class="card-center col-sm-3">
       <div class="card-contact" style="width: 18rem;">
@@ -84,7 +81,7 @@
       </div>
     </div>
   
-  <!---------------------Form --------------------------> 
+  <!---------------------Email-form--------------------------> 
   <form class="form col-md-6" onsubmit="return sendMail(this);">
     <input type="name" name="name" class="form-control" id="name" placeholder="Name" required>
     <input type="email" name="emailaddress" class="form-control" id="emailaddress" placeholder="Email" required>
@@ -185,6 +182,6 @@
       </div>
     </div>
   </footer>
-<script src="assets/js/sendEmail.js"></script>
+  <script src="assets/js/sendEmail.js"></script>
 </body>
 </html>

@@ -12,45 +12,43 @@
     <title>EU Quiz</title>
 </head>
 <body onload="NextQuestion(0)">
-      <!---------------------Navbar-------------------------->
+<!---------------------Navbar-------------------------->
   <nav class="navbar navbar-expand-lg navbar-dark bg-warning">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.html">HOME</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" href="quiz.html">QUIZ</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="map.html">MAP</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">CONTACT</a>
-              </li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-              <li>
-                <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-square"></i></a>
-              </li>
-              <li>
-                <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter-square"> </i></a>
-              </li>
-              <li>
-                <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube-square"> </i></a>
-              </li>
-              <li>
-                <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"> </i></a>
-              </li>
-            </ul>
-          </div>
-        </div> 
-      </nav>
-
-    <!---------------------Quiz-------------------------->
-    <!---------------------Model of answers when quiz ends-------------------------->
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="quiz.html">QUIZ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="map.html">MAP</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">CONTACT</a>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-square"></i></a>
+          </li>
+          <li>
+            <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter-square"> </i></a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube-square"> </i></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"> </i></a>
+          </li>
+        </ul>
+      </div>
+    </div> 
+  </nav>
+  <!---------------------Quiz-------------------------->
   <div class="modal-container" id="score-modal">
     <div class="modal-content-container">
       <h1>Congratulations!!! Quiz Completed.</h1>
@@ -73,7 +71,7 @@
       </figure>
     </div>
   </div>
-    <!---------------------Container with questions and answers-------------------------->
+  <!---------------------Questions-container-------------------------->
   <div class="game-quiz-container">
     <div class="game-details-container">
       <h1>Score : <span id="player-score"></span> / 10</h1>
@@ -104,103 +102,103 @@
       <label for="option-three" class="option" id="option-three-label"></label>
     </span>
   </div>
-<!---------------------Next Question - button-------------------------->
+<!---------------------NextQuestion-button-------------------------->
   <div class="next-button-container">
     <button onclick="handleNextQuestion()">Next Question</button>
   </div>
 </div>
 <!---------------------Footer-------------------------->
-      <footer>
-        <div class="row">
-          <div class="col-12">  
-            <div class="flag">
-              <ul>
-                <li>
-                  <a href="https://en.wikipedia.org/wiki/Austria" target="_blank"><img src="assets/images/icons/austria.png" class="country"></a>
-                </li>
-                <li>
-                  <a href="https://en.wikipedia.org/wiki/Belgium" target="_blank"><img src="assets/images/icons/belgium.png" class="country"> </a>
-                </li>
-                <li>
-                  <a href="https://en.wikipedia.org/wiki/Bulgaria" target="_blank"><img src="assets/images//icons/bulgaria.png" class="country"></a>
-                </li>
-                <li>
-                  <a href="https://en.wikipedia.org/wiki/Croatia" target="_blank"><img src="assets/images/icons/croatia.png" class="country"></a>
-                </li>
-                <li>
-                  <a href="https://en.wikipedia.org/wiki/Cyprus" target="_blank"><img src="assets/images/icons/cyprus.png" class="country"></a>
-                </li>
-                <li>
-                  <a href="https://en.wikipedia.org/wiki/Czech_Republic" target="_blank"><img src="assets/images/icons/czech-republic.png" class="country"></a>
-                </li>
-                <li>
-                  <a href="https://en.wikipedia.org/wiki/Denmark" target="_blank"><img src="assets/images/icons/denmark.png" class="country"></a>
-                </li>
-                <li>
-                  <a href="https://en.wikipedia.org/wiki/Estonia" target="_blank"><img src="assets/images/icons/estonia.png" class="country"></a>
-                </li>
-                <li>
-                  <a href="https://en.wikipedia.org/wiki/Finland" target="_blank"><img src="assets/images/icons/finland.png" class="country"></a>
-                </li>
-                <li>
-                  <a href="https://en.wikipedia.org/wiki/France" target="_blank"><img src="assets/images/icons/france.png" class="country"></a>
-                </li>
-                <li>
-                  <a href="https://en.wikipedia.org/wiki/Germany" target="_blank"><img src="assets/images/icons/germany.png" class="country"></a>
-                </li>
-                <li>
-                  <a href="https://en.wikipedia.org/wiki/Greece" target="_blank"><img src="assets/images/icons/greece.png" class="country"></a>
-                </li>
-                <li>
-                  <a href="https://en.wikipedia.org/wiki/Hungary" target="_blank"><img src="assets/images/icons/hungary.png" class="country"></a>
-                </li>
-                <li>
-                  <a href="https://en.wikipedia.org/wiki/Ireland" target="_blank"><img src="assets/images/icons/ireland.png" class="country"></a>
-                </li>
-                <li>
-                  <a href="https://en.wikipedia.org/wiki/Italy" target="_blank"><img src="assets/images/icons/italy.png" class="country"></a>
-                </li>
-                <li>
-                  <a href="https://en.wikipedia.org/wiki/Latvia" target="_blank"><img src="assets/images/icons/latvia.png" class="country"></a>
-                </li>
-                <li>     
-                  <a href="https://en.wikipedia.org/wiki/Lithuania" target="_blank"><img src="assets/images/icons/lithuania.png" class="country"></a>
-                </li>
-                <li>
-                  <a href="https://en.wikipedia.org/wiki/Luxembourg" target="_blank"><img src="assets/images/icons/luxembourg.png" class="country"></a>
-                </li>
-                <li>
-                  <a href="https://en.wikipedia.org/wiki/Malta" target="_blank"><img src="assets/images/icons/malta.png" class="country"></a>
-                </li>
-                <li>
-                  <a href="https://en.wikipedia.org/wiki/Netherlands" target="_blank"><img src="assets/images/icons/netherlands.png" class="country"></a>
-                </li>
-                <li>
-                  <a href="https://en.wikipedia.org/wiki/Poland" target="_blank"><img src="assets/images/icons/poland.png" class="country"></a>
-                </li>
-                <li>
-                  <a href="https://en.wikipedia.org/wiki/Portugal" target="_blank"><img src="assets/images/icons/portugal.png" class="country"></a>
-                </li>
-                <li>
-                  <a href="https://en.wikipedia.org/wiki/Romania" target="_blank"><img src="assets/images/icons/romania.png" class="country"></a>
-                </li>
-                <li>
-                  <a href="https://en.wikipedia.org/wiki/Slovakia" target="_blank"><img src="assets/images/icons/slovakia.png" class="country"></a>
-                </li>
-                <li>
-                  <a href="https://en.wikipedia.org/wiki/Slovenia" target="_blank"><img src="assets/images/icons/slovenia.png" class="country"></a>
-                </li>
-                <li>
-                  <a href="https://en.wikipedia.org/wiki/Spain" target="_blank"><img src="assets/images/icons/spain.png" class="country"></a>
-                </li>
-                <li>
-                  <a href="https://en.wikipedia.org/wiki/Sweden" target="_blank"><img src="assets/images/icons/sweden.png" class="country"></a>
-                </li>
-              </ul> 
-            </div>
-          </div>
-        </div>
-      </footer>
-  <script src="assets/js/quiz.js"></script>
+<footer>
+  <div class="row">
+    <div class="col-12">  
+      <div class="flag">
+        <ul>
+          <li>
+            <a href="https://en.wikipedia.org/wiki/Austria" target="_blank"><img src="assets/images/icons/austria.png" class="country"></a>
+          </li>
+          <li>
+            <a href="https://en.wikipedia.org/wiki/Belgium" target="_blank"><img src="assets/images/icons/belgium.png" class="country"> </a>
+          </li>
+          <li>
+            <a href="https://en.wikipedia.org/wiki/Bulgaria" target="_blank"><img src="assets/images//icons/bulgaria.png" class="country"></a>
+          </li>
+          <li>
+            <a href="https://en.wikipedia.org/wiki/Croatia" target="_blank"><img src="assets/images/icons/croatia.png" class="country"></a>
+          </li>
+          <li>
+            <a href="https://en.wikipedia.org/wiki/Cyprus" target="_blank"><img src="assets/images/icons/cyprus.png" class="country"></a>
+          </li>
+          <li>
+            <a href="https://en.wikipedia.org/wiki/Czech_Republic" target="_blank"><img src="assets/images/icons/czech-republic.png" class="country"></a>
+          </li>
+          <li>
+            <a href="https://en.wikipedia.org/wiki/Denmark" target="_blank"><img src="assets/images/icons/denmark.png" class="country"></a>
+          </li>
+          <li>
+            <a href="https://en.wikipedia.org/wiki/Estonia" target="_blank"><img src="assets/images/icons/estonia.png" class="country"></a>
+          </li>
+          <li>
+            <a href="https://en.wikipedia.org/wiki/Finland" target="_blank"><img src="assets/images/icons/finland.png" class="country"></a>
+          </li>
+          <li>
+            <a href="https://en.wikipedia.org/wiki/France" target="_blank"><img src="assets/images/icons/france.png" class="country"></a>
+          </li>
+          <li>
+            <a href="https://en.wikipedia.org/wiki/Germany" target="_blank"><img src="assets/images/icons/germany.png" class="country"></a>
+          </li>
+          <li>
+            <a href="https://en.wikipedia.org/wiki/Greece" target="_blank"><img src="assets/images/icons/greece.png" class="country"></a>
+          </li>
+          <li>
+            <a href="https://en.wikipedia.org/wiki/Hungary" target="_blank"><img src="assets/images/icons/hungary.png" class="country"></a>
+          </li>
+          <li>
+            <a href="https://en.wikipedia.org/wiki/Ireland" target="_blank"><img src="assets/images/icons/ireland.png" class="country"></a>
+          </li>
+          <li>
+            <a href="https://en.wikipedia.org/wiki/Italy" target="_blank"><img src="assets/images/icons/italy.png" class="country"></a>
+          </li>
+          <li>
+            <a href="https://en.wikipedia.org/wiki/Latvia" target="_blank"><img src="assets/images/icons/latvia.png" class="country"></a>
+          </li>
+          <li>     
+            <a href="https://en.wikipedia.org/wiki/Lithuania" target="_blank"><img src="assets/images/icons/lithuania.png" class="country"></a>
+          </li>
+          <li>
+            <a href="https://en.wikipedia.org/wiki/Luxembourg" target="_blank"><img src="assets/images/icons/luxembourg.png" class="country"></a>
+          </li>
+          <li>
+            <a href="https://en.wikipedia.org/wiki/Malta" target="_blank"><img src="assets/images/icons/malta.png" class="country"></a>
+          </li>
+          <li>
+            <a href="https://en.wikipedia.org/wiki/Netherlands" target="_blank"><img src="assets/images/icons/netherlands.png" class="country"></a>
+          </li>
+          <li>
+            <a href="https://en.wikipedia.org/wiki/Poland" target="_blank"><img src="assets/images/icons/poland.png" class="country"></a>
+          </li>
+          <li>
+            <a href="https://en.wikipedia.org/wiki/Portugal" target="_blank"><img src="assets/images/icons/portugal.png" class="country"></a>
+          </li>
+          <li>
+            <a href="https://en.wikipedia.org/wiki/Romania" target="_blank"><img src="assets/images/icons/romania.png" class="country"></a>
+          </li>
+          <li>
+            <a href="https://en.wikipedia.org/wiki/Slovakia" target="_blank"><img src="assets/images/icons/slovakia.png" class="country"></a>
+          </li>
+          <li>
+            <a href="https://en.wikipedia.org/wiki/Slovenia" target="_blank"><img src="assets/images/icons/slovenia.png" class="country"></a>
+          </li>
+          <li>
+            <a href="https://en.wikipedia.org/wiki/Spain" target="_blank"><img src="assets/images/icons/spain.png" class="country"></a>
+          </li>
+          <li>
+            <a href="https://en.wikipedia.org/wiki/Sweden" target="_blank"><img src="assets/images/icons/sweden.png" class="country"></a>
+          </li>
+        </ul> 
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="assets/js/quiz.js"></script>
 </body>
 </html>

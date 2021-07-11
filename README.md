@@ -36,18 +36,18 @@ The EU Quiz is a set of 27 questions, but during one deal the participants have 
 * Responsive on all device sizes
 * Interactive elements
 ### Existing Features
-#### *Navigation Bar
+#### Navigation Bar
 * Featured on all four pages, the full responsive navigation bar includes links to the Home page, Quiz page, Map page and Contact page and the active icons to the social media, the links of them will open in new tabs. . Navigation bar is identical in each page to allow for easy navigation.
 * This section will allow the user to easily navigate from page to page across all devices without having to revert back to the previous page via the ‘back’ button.
-#### *The home page 
+#### The home page 
 * The home page includes a background image and the START QUIZ button, that allows redirection to the quiz page. 
-#### *The quiz page
+#### The quiz page
 * The quiz page contains the quiz form with the questions, that encourages user imediately to take part with the game.  
-#### *The map page
+#### The map page
 * The map page contains responsive Google map with pointers of european capitals. That helps users to find the looking city in the easy way.
-#### *The contact page
+#### The contact page
 * The contact page gives the information about the organisation address and contains contact form, that allows to send the direct email and easly contact with the organisation. 
-#### *The footer section 
+#### The footer section 
 * The footer section includes flags of 27 countries of EU. The icons are active and redirect the user, after clicking on them, to the Wikipedia pages for getting more information about each country. The links will open in new tabs. Footer  is identical in each page to allow for easy navigation.
 
 ### Features Left to Implement
