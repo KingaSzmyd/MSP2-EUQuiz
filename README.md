@@ -100,7 +100,7 @@ o	No errors were found when passing through the official (Jigsaw) validator
 •	Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues.
 ### Unfixed Bugs
 You will need to mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a big variable to consider, paucity of time and difficulty understanding implementation is not a valid reason to leave bugs unfixed.
-Deployment
+## Deployment
 This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub)
 •	The site was deployed to GitHub pages. The steps to deploy are as follows:
 o	In the GitHub repository, navigate to the Settings tab
@@ -109,44 +109,20 @@ o	Once the master branch has been selected, the page will be automatically refre
 The live link can be found here - https://code-institute-org.github.io/love-running-2.0/index.html
 
 ### Credits
+#### Code:
+* [Bootstrap](https://getbootstrap.com/docs/versions/) - liberies used through all pages to style elements: navigation bar, callout, buttons and email form.
+* [Code Institute-1](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+IFD101+2017_T3/courseware/03d3f6524ad249d9b33e3336d156dfd0/3b2af8636ea54a4d9dc45126f7498633/) - learning materials from the course, how to create interactive Google Map.
+* [Code Institute-2](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+IFD101+2017_T3/courseware/03d3f6524ad249d9b33e3336d156dfd0/e4710f80cdf34bffbd607bc102482d5c/) - learning materials from the course, how to create function send email.
+* [EmailJs](https://www.emailjs.com/) - creating email in JavaScript.
+* [Dev.to](https://dev.to/sulaimonolaniran/building-a-simple-quiz-with-html-css-and-javascript-4elp) - information and code used to create interactive quiz in JavaScript. 
 #### Images:
 * [Flaticon](https://www.flaticon.com/packs/countrys-flags) - source of all flags images used on the website. 
 * [Unsplash](https://unsplash.com/) - the background image on the home page.
 #### Content:
 * [Wikipedia](https://www.wikipedia.org/) - information about the european countries.
 * Information for the quiz questions coming from: [Kelayann.com](http://www.kaleyann.com/10-fun-facts-vienna/), [Meininger-hotels.com](https://www.meininger-hotels.com/blog/en/fun-facts-brussels/), [Travelwithwinny.com](https://www.travelwithwinny.com/bulgaria-sofia-travel/), [Timeout.com](https://www.timeout.com/croatia/news/10-secret-facts-about-zagreb-050920), [Cyhealthservices.com](https://www.cyhealthservices.com/news-events/39-5-interesting-facts-about-cyprus-you-probably-didn-t-know), [St-christophers.co.uk](https://www.st-christophers.co.uk/travel-blog/cool-facts-you-probably-didnt-know-about-prague), [Copenhagendowntown.com](https://www.copenhagendowntown.com/blog/8-fun-facts-about-copenhagen), [Blog.radissonblu.com](https://blog.radissonblu.com/tallinns-fun-facts/), [Justfunfacts.com](http://justfunfacts.com/interesting-facts-about-helsinki/), [Blog.aifsabroad.com](https://blog.aifsabroad.com/2019/05/10/10-fun-facts-about-athens-greece-that-you-might-not-know/), [Travelnotsandbeyond.com](https://travelnotesandbeyond.com/interesting-things-about-budapest/), [Viptaxis.ie](https://viptaxis.ie/fun-facts-dublin-2/), [Worldstrides.com](https://worldstrides.com/blog/2016/10/12-interesting-facts-about-rome/), [Isolatetraveller.com](https://www.isolatedtraveller.com/20-interesting-facts-about-riga/), [Worldscapitalcities.com](https://www.worldscapitalcities.com/capital-facts-for-vilnius-lithuania/), [Welcome-center-malta.com](https://www.welcome-center-malta.com/10-facts-about-valletta-you-didnt-know/), [Getyourguide.com](https://www.getyourguide.com/magazine/2020/03/amsterdam-fun-facts/), [Theculturetrip.com](https://theculturetrip.com/europe/portugal/lisbon/articles/10-facts-about-lisbon-that-you-never-knew/), [Solosophie.com](https://www.solosophie.com/fun-cool-weird-interesting-facts-about-bucharest/), [Total-slovenia-news.com](https://www.total-slovenia-news.com/lifestyle/485-25-things-to-know-about-ljubljana), [Traveltalktours.com](https://www.traveltalktours.com/11-astounding-facts-madrid/), [Nordicexperience.com](https://www.nordicexperience.com/know-25-fun-interesting-facts-stockholm-sweden/)
+* [Font Awesome](https://fontawesome.com/) - social media icons used for styling the navigation bar. 
 ### Media:
 * [Europa.eu](https://europa.eu/european-union/about-eu/symbols/anthem_en) - audio file with european anthem used, when the quiz is completed.
-
-
-In this section you need to reference where you got your content, media and extra help from. It is common practice to use code from other repositories and tutorials, however, it is important to be very specific about these sources to avoid plagiarism.
-You can break the credits section up into Content and Media, depending on what you have included in your project.
-Content
-•	The text for the Home page was taken from Wikipedia Article A
-•	Instructions on how to implement form validation on the Sign Up page was taken from Specific YouTube Tutorial
-•	The icons in the footer were taken from Font Awesome
-Media
-•	The photos used on the home and sign up page are from This Open Source site
-•	The images used for the gallery page were taken from this other open source site
-Congratulations on completing your Readme, you have made another big stride in the direction of being a developer!
-Other General Project Advice
-Below you will find a couple of extra tips that may be helpful when completing your project. Remember that each of these projects will become part of your final portfolio so it’s important to allow enough time to showcase your best work!
-•	One of the most basic elements of keeping a healthy commit history is with the commit message. When getting started with your project, read through this article by Chris Beams on How to Write a Git Commit Message
-o	Make sure to keep the messages in the imperative mood
-•	When naming the files in your project directory, make sure to consider meaningful naming of files, point to specific names and sections of content.
-o	For example, instead of naming an image used ‘image1.png’ consider naming it ‘landing_page_img.png’. This will ensure that there are clear file paths kept.
-•	Do some extra research on good and bad coding practices, there are a handful of useful articles to read, consider reviewing the following list when getting started:
-o	Writing Your Best Code
-o	HTML & CSS Coding Best Practices
-o	Google HTML/CSS Style Guide
-Getting started with your Portfolio Projects can be daunting, planning your project can make it a lot easier to tackle, take small steps to reach the final outcome and enjoy the process!
-
-
-
-
-
-
-
-
-
-
+## Acknowledgements
+My Mentor for helpful feedback.
