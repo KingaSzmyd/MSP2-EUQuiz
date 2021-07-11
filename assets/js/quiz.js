@@ -24,7 +24,7 @@ const questions = [
   },
 
   {
-      question: "Which capital has: the largest train station in Europe, more ‚Döner‘ Kebap shops than Istanbul and its own beer, called – Weiße?",
+      question: "Which capital has: the largest train station in Europe, more 'Döner' Kebap shops than Istanbul and its own beer, called – Weiße?",
       optionA: "Vienna",
       optionB: "Brussels",
       optionC: "Berlin",
@@ -72,7 +72,7 @@ const questions = [
   },
 
   {
-      question: "In which city is the largest (and heaviest) building in the world – Palace of Parliament?",
+      question: "In which city is the largest and heaviest building in the world – Palace of Parliament?",
       optionA: "Paris",
       optionB: "Stockholm",
       optionC: "Buchkarest",
@@ -88,7 +88,7 @@ const questions = [
   },
 
   {
-      question: "Which capital became the venue for the award of the first Nobel Prizes, in the 1901?",
+      question: "Which capital became the venue for the award of the first Nobel Prizes in the 1901?",
       optionA: "Stockholm",
       optionB: "Copenhagen",
       optionC: "Helsinki",
@@ -105,7 +105,7 @@ const questions = [
   },
 
   {
-      question: " Which city has the secret passages, under the Old Town, the labyrinth of 17th century tunnels?",
+      question: " Which city has the secret passages under the Old Town, the labyrinth of 17th century tunnels?",
       optionA: "Dublin",
       optionB: "Tallin",
       optionC: "Warsaw",
@@ -113,7 +113,7 @@ const questions = [
   },
 
   {
-      question: "Which capital is called the: 'Daughter of the Baltic' and the 'White City of the North'?",
+      question: "Which capital is called 'Daughter of the Baltic' and 'White City of the North'?",
       optionA: "Helsinki",
       optionB: "Stockholm",
       optionC: "Riga",
@@ -121,7 +121,7 @@ const questions = [
   },
 
   {
-      question: "Which capital is called the 'Phoenix City', that has risen repeatedly from the ashes of war?",
+      question: "Which capital is called the 'Phoenix City', that has risen repeatedly from the ashes of wars?",
       optionA: "Berlin",
       optionB: "Warsaw",
       optionC: "Budapest",
@@ -145,7 +145,7 @@ const questions = [
   },
 
   {
-      question: "Which capital has famous from it's historical center noted in the UNESCO World Heritage Site, for its Art Nouveau/Jugendstil architecture?",
+      question: "Which capital is famous from the historical center noted in the UNESCO World Heritage Site, for its Art Nouveau/Jugendstil architecture?",
       optionA: "Stockholm",
       optionB: "Helsinki",
       optionC: "Riga",
@@ -177,7 +177,7 @@ const questions = [
   },
 
   {
-      question: "In which capital is recognized by the Guinness World Records for local Restaurant Chiggeri, which offers a wine life of 1,746 distinct wines?",
+      question: "Which capital is recognized by the Guinness World Records for local Restaurant Chiggeri, which offers 1,746 distinct wines?",
       optionA: "Luxembourg City",
       optionB: "Paris",
       optionC: "Madrid",
@@ -201,7 +201,7 @@ const questions = [
   },
 
   {
-      question: "Which city is the world’s only national capital that shares its city borders with two independent countries?",
+      question: "Which city is the world’s only capital, that shares its borders with two independent countries?",
       optionA: "Zagreb",
       optionB: "Dublin",
       optionC: "Bratislava",
