@@ -9,7 +9,7 @@ body {
 .callout-container {
     height: 100vh;
 
-    background: url('assets/images/background/EU.png') no-repeat bottom right fixed;
+    background: url("../images/EU.jpg") no-repeat fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
