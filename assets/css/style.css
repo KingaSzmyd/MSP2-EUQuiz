@@ -121,12 +121,10 @@ button[type="submit"] {
 
 }
 
-
-
-.card-img-top {
-    width: 20px;
-    height: 20px;
-    padding-left: 20px;
+.img-thumbnail {
+    border: none;
+    height: 220px;
+    width: 220px;
 }
 
 .row {
