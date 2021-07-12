@@ -214,8 +214,194 @@ const questions = [
       optionB: "Paris",
       optionC: "London",
       correctOption: "optionB"
-  }
-]
+  },
+
+  {
+    question: "Which city is the only capital in the world, which produce significant quantities of wine within its city limits?",
+    optionA: "Madrid",
+    optionB: "Vienna",
+    optionC: "Rome",
+    correctOption: "optionB"
+},
+
+{
+    question: "Which city is well known also as the capital of Europe?",
+    optionA: "Brussels",
+    optionB: "Luxembourg City",
+    optionC: "Paris",
+    correctOption: "optionA"
+},
+
+{
+    question: "In which capital city the first subway station took 30 years to build?",
+    optionA: "Vilnius",
+    optionB: "Copenhagen",
+    optionC: "Sofia",
+    correctOption: "optionC"
+},
+
+{
+    question: "In which capital city many places are named after bears (medvjedi), for example: Mount Medvednica or Medvedgrad Castle?",
+    optionA: "Zagreb",
+    optionB: "Warsaw",
+    optionC: "Helsinki",
+    correctOption: "optionA"
+},
+
+{   
+    question: "Which capital city is the home to the Oldest Wine Brand and the Oldest Perfume Bottle in the world?",
+    optionA: "Paris",
+    optionB: "Nicosia",
+    optionC: "Dublin",
+    correctOption: "optionB"
+},
+
+{   
+    question: "Which capital is famous from its beer SPA and pork knuckle?",
+    optionA: "Prague",
+    optionB: "Brussels",
+    optionC: "Berlin",
+    correctOption: "optionA"
+},
+
+{   
+    question: "Which capital is called the “Happiest City” in the world?",
+    optionA: "Madrid",
+    optionB: "Copenhengn",
+    optionC: "Stockholm",
+    correctOption: "optionB"
+},
+
+{   
+    question: "Which city is the coldest capital inthe world, with a yearly average temperature not exceeding 0°C?",
+    optionA: "Stockholm",
+    optionB: "Riga",
+    optionC: "Helsinki",
+    correctOption: "optionC"
+},
+
+{   
+    question: "Citizens of which capital city declined Tom Cruise’s request for becoming an honorary citizen?",
+    optionA: "Paris",
+    optionB: "Mardid",
+    optionC: "Rome",
+    correctOption: "optionA"
+},
+
+{   
+    question: "In which capital city is the longest open-air gallery in the world - The East Side Gallery?",
+    optionA: "Bratislava",
+    optionB: "Berlin",
+    optionC: "Vienna",
+    correctOption: "optionB"
+},
+
+{   
+    question: "In which capital buildings are not higher than 96 m?",
+    optionA: "Warsaw",
+    optionB: "Rome",
+    optionC: "Budapest",
+    correctOption: "optionC"
+},
+
+{   
+    question: "In which capital is the only bridge in Europe that have the same width and length?",
+    optionA: "Warsaw",
+    optionB: "Rome",
+    optionC: "Athens",
+    correctOption: "optionC"
+},
+
+{   
+    question: "Which capital is located on both banks of the river Daugava?",
+    optionA: "Warsaw",
+    optionB: "Vilnius",
+    optionC: "Riga",
+    correctOption: "optionC"
+},
+
+{   
+    question: "Which capital is called 'Gibraltar of the North'?",
+    optionA: "Luxembourg City",
+    optionB: "Stockholm",
+    optionC: "Helsinki",
+    correctOption: "optionA"
+},
+
+{   
+    question: "Which capital city was named after the Grand Master of the Knights?",
+    optionA: "Warsaw",
+    optionB: "Vallette",
+    optionC: "Dublin",
+    correctOption: "optionB"
+},
+
+{   
+    question: "In which capital city was born Maria Skłodowska-Curie, who was the first female recipient of the Nobel Prize?",
+    optionA: "Paris",
+    optionB: "Brussels",
+    optionC: "Warsaw",
+    correctOption: "optionC"
+},
+
+{   
+    question: "Which capital city has been named after a shepherd?",
+    optionA: "Buchkarest",
+    optionB: "Budapest",
+    optionC: "Tallin",
+    correctOption: "optionA"
+},
+
+{   
+    question: "Which capital city is nestled beside the Danube River?",
+    optionA: "Prague",
+    optionB: "Bratislava",
+    optionC: "Ljubljana",
+    correctOption: "optionB"
+},
+
+{   
+    question: "In which capital city  the US and Russian embassies face each other?",
+    optionA: "Copenhagen",
+    optionB: "Brussels",
+    optionC: "Ljubljana",
+    correctOption: "optionC"
+},
+
+{   
+    question: "Which capital city is a home to the football club, that according to FIFA, is the world’s most successful football club of the 20th century?",
+    optionA: "Madrid",
+    optionB: "Paris",
+    optionC: "Berlin",
+    correctOption: "optionB"
+},
+
+{   
+    question: "Which capital is a home to the Globe Arena, currently the largest hemispherical building in the world?",
+    optionA: "Ljubljana",
+    optionB: "Copenhagen",
+    optionC: "Stockholm",
+    correctOption: "optionC"
+},
+
+{   
+    question: "Which capital has more than 900 churches and 280 fountains?",
+    optionA: "Rome",
+    optionB: "Warsaw",
+    optionC: "Paris",
+    correctOption: "optionA"
+},
+
+{   
+    question: "Which capital city is famous from its: narrow houses, canals and bicycles?",
+    optionA: "Copenhagen",
+    optionB: "Amsterdam",
+    optionC: "Berlin",
+    correctOption: "optionB"
+},
+
+
+];
 
 
 let shuffledQuestions = [] //empty array to hold shuffled selected questions
@@ -236,7 +422,7 @@ let wrongAttempt = 0;
 let indexNumber = 0;
 
 // function for displaying next question in the array to dom
-function NextQuestion(index) {
+function nextQuestion(index) {
   handleQuestions()
   const currentQuestion = shuffledQuestions[index];
   document.getElementById("question-number").innerHTML = questionNumber;
@@ -300,7 +486,7 @@ function handleNextQuestion() {
   //delays next question displaying for a second
   setTimeout(() => {
       if (indexNumber <= 9) {
-          NextQuestion(indexNumber)
+          nextQuestion(indexNumber)
       }
       else {
           handleEndGame()
@@ -361,7 +547,7 @@ function closeScoreModal() {
   wrongAttempt = 0;
   indexNumber = 0;
   shuffledQuestions = [];
-  NextQuestion(indexNumber);
+  nextQuestion(indexNumber);
   document.getElementById('score-modal').style.display = "none";
 }
 
