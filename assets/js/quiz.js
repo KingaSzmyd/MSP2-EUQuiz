@@ -230,17 +230,17 @@ function handleQuestions() {
   }
 }
 
-let questionNumber = 1
-let playerScore = 0  
-let wrongAttempt = 0 
-let indexNumber = 0
+let questionNumber = 1;
+let playerScore = 0; 
+let wrongAttempt = 0;
+let indexNumber = 0;
 
 // function for displaying next question in the array to dom
 function NextQuestion(index) {
   handleQuestions()
-  const currentQuestion = shuffledQuestions[index]
-  document.getElementById("question-number").innerHTML = questionNumber
-  document.getElementById("player-score").innerHTML = playerScore
+  const currentQuestion = shuffledQuestions[index];
+  document.getElementById("question-number").innerHTML = questionNumber;
+  document.getElementById("player-score").innerHTML = playerScore;
   document.getElementById("display-question").innerHTML = currentQuestion.question;
   document.getElementById("option-one-label").innerHTML = currentQuestion.optionA;
   document.getElementById("option-two-label").innerHTML = currentQuestion.optionB;
@@ -250,27 +250,27 @@ function NextQuestion(index) {
 
 function checkForAnswer() {
     //function for checking answers
-  const currentQuestion = shuffledQuestions[indexNumber] //get current question
-  const currentQuestionAnswer = currentQuestion.correctOption //get current question's answer
+  const currentQuestion = shuffledQuestions[indexNumber]; //get current question
+  const currentQuestionAnswer = currentQuestion.correctOption; //get current question's answer
   const options = document.getElementsByName("option"); //get all element in dom with name of 'option'
-  let correctOption = null
+  let correctOption = null;
 
   options.forEach((option) => {
       if (option.value === currentQuestionAnswer) {
           //get's correct's radio input with correct answer
-          correctOption = option.labels[0].id
+          correctOption = option.labels[0].id;
       }
   })
  
   //checking to make sure a radio input has been checked or an option being chosen
   if (options[0].checked === false && options[1].checked === false && options[2].checked === false) {
-      document.getElementById('option-modal').style.display = "flex"
+      document.getElementById('option-modal').style.display = "flex";
   }
 
   //checking if checked radio button is same as answer
   options.forEach((option) => {
       if (option.checked === true && option.value === currentQuestionAnswer) {
-          document.getElementById(correctOption).style.backgroundColor = "#33CF09"
+          document.getElementById(correctOption).style.backgroundColor = "#33CF09";
           playerScore++
           indexNumber++
           //set to delay question number till when next question loads
@@ -280,9 +280,9 @@ function checkForAnswer() {
       }
 
       else if (option.checked && option.value !== currentQuestionAnswer) {
-          const wrongLabelId = option.labels[0].id
-          document.getElementById(wrongLabelId).style.backgroundColor = "#F52E06"
-          document.getElementById(correctOption).style.backgroundColor = "#33CF09"
+          const wrongLabelId = option.labels[0].id;
+          document.getElementById(wrongLabelId).style.backgroundColor = "#F52E06";
+          document.getElementById(correctOption).style.backgroundColor = "#33CF09";
           wrongAttempt++
           indexNumber++
           //set to delay question number till when next question loads
@@ -313,7 +313,7 @@ function handleNextQuestion() {
 function resetOptionBackground() {
   const options = document.getElementsByName("option");
   options.forEach((option) => {
-      document.getElementById(option.labels[0].id).style.backgroundColor = ""
+      document.getElementById(option.labels[0].id).style.backgroundColor = "";
   })
 }
 
@@ -345,27 +345,27 @@ function handleEndGame() {
   const playerGrade = (playerScore / 10) * 100
 
   //data to display to score board
-  document.getElementById('remarks').innerHTML = remark
-  document.getElementById('remarks').style.color = remarkColor
-  document.getElementById('grade-percentage').innerHTML = playerGrade
-  document.getElementById('wrong-answers').innerHTML = wrongAttempt
-  document.getElementById('right-answers').innerHTML = playerScore
-  document.getElementById('score-modal').style.display = "flex"
+  document.getElementById('remarks').innerHTML = remark;
+  document.getElementById('remarks').style.color = remarkColor;
+  document.getElementById('grade-percentage').innerHTML = playerGrade;
+  document.getElementById('wrong-answers').innerHTML = wrongAttempt;
+  document.getElementById('right-answers').innerHTML = playerScore;
+  document.getElementById('score-modal').style.display = "flex";
 
 }
 
 //closes score modal and resets game
 function closeScoreModal() {
-  questionNumber = 1
-  playerScore = 0
-  wrongAttempt = 0
-  indexNumber = 0
-  shuffledQuestions = []
-  NextQuestion(indexNumber)
-  document.getElementById('score-modal').style.display = "none"
+  questionNumber = 1;
+  playerScore = 0;
+  wrongAttempt = 0;
+  indexNumber = 0;
+  shuffledQuestions = [];
+  NextQuestion(indexNumber);
+  document.getElementById('score-modal').style.display = "none";
 }
 
 //function to close warning modal
 function closeOptionModal() {
-  document.getElementById('option-modal').style.display = "none"
+  document.getElementById('option-modal').style.display = "none";
 }
