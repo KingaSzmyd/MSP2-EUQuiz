@@ -35,6 +35,15 @@ body {
     border: 0;
 }
 
+.nav-item {
+    text-align: left;
+}
+
+.navbar-right {
+    flex-direction: row;
+    justify-self: center;
+}
+
 .navbar .navbar-toggler {
     border: 0;
 }
@@ -76,16 +85,15 @@ footer {
     height: 150px;
 } 
 
-.row {
-    padding: 20px 10px 20px 10px; 
+ul, il {
+    padding-left: 0;
 }
 
 .flag {
     text-align: center;
     border: 0;
     margin-top: 35px;
-    padding-top: 10px;
-    
+    padding-top: 10px;  
 }
 
 .flag li {
@@ -411,7 +419,6 @@ input[type=radio]:checked ~ .option {
     letter-spacing: 20px;
     background: url('../images/404.jpg') center no-repeat;
     -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text; 
 }
 
 .container a {
