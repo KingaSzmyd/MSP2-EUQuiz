@@ -82,11 +82,11 @@
     </div>
   
   <!---------------------Email-form--------------------------> 
-  <form class="form col-md-6" onsubmit="return sendMail(this);">
+  <form class="form col-md-6" id="form" onsubmit="return sendMail(this);">
     <input type="name" name="name" class="form-control" id="name" placeholder="Name" required>
     <input type="email" name="emailaddress" class="form-control" id="emailaddress" placeholder="Email" required>
     <input type="subject" name="subject" class="form-control" id="subject" placeholder="Subject">
-    <textarea name="request" class="form-control" id="request" rows="5" required>Message</textarea>
+    <textarea name="request" class="form-control" id="request" rows="5" required></textarea>
     <br>
     <button type="submit" class="btn btn-warning btn-lg active" aria-pressed="true">Send</button> 
   </form>
