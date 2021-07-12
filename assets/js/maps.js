@@ -5,8 +5,8 @@ function initMap() {
     center: { lat: 54.525961, lng: 15.255119 },
     zoom: 8,
   });
-
 }
+
 function initMap() {
     const map = new google.maps.Map(document.getElementById("map"), {
       zoom: 3,
@@ -18,6 +18,7 @@ function initMap() {
     // Note: The code uses the JavaScript Array.prototype.map() method to
     // create an array of markers based on a given "locations" array.
     // The map() method here has nothing to do with the Google Maps API.
+    
     const markers = locations.map((location, i) => {
       return new google.maps.Marker({
         position: location,
@@ -30,6 +31,7 @@ function initMap() {
         "https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m",
     });
   }
+  
   const locations = [
     { lat: 48.21184, lng: 16.37631 },
     { lat: 50.85425, lng: 4.35582 },
