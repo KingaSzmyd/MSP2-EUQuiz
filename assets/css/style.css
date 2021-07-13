@@ -417,8 +417,7 @@ input[type=radio]:checked ~ .option {
     margin: 0;
     font-weight: 900;
     letter-spacing: 20px;
-    background: url('../images/404.jpg') center no-repeat;
-    -webkit-text-fill-color: transparent;
+    font-family: Oswald sans-serif;
 }
 
 .container a {
