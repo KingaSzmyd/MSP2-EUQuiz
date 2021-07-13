@@ -130,8 +130,8 @@ div#map {
     padding-top: 15px;
 }
 
-button[type="submit"] {
-    margin-top: 0 auto;
+#form {
+    margin-top: 0;
     text-align: center;
 
 }
