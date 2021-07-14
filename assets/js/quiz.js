@@ -57,7 +57,7 @@ const questions = [
 
   {
       question: "Which city is the smallest european capital?",
-      optionA: "Tallin",
+      optionA: "Tallinn",
       optionB: "Riga",
       optionC: "Vallette",
       correctOption: "optionC"
@@ -107,7 +107,7 @@ const questions = [
   {
       question: "Which city has the secret passages under the Old Town, the labyrinth of 17th century tunnels?",
       optionA: "Dublin",
-      optionB: "Tallin",
+      optionB: "Tallinn",
       optionC: "Warsaw",
       correctOption: "optionB"
   },
@@ -140,7 +140,7 @@ const questions = [
       question: "Which capital name in old local language means 'Black Pool'?",
       optionA: "Dublin",
       optionB: "Madrid",
-      optionC: "Tallin",
+      optionC: "Tallinn",
       correctOption: "optionA"
   },
 
@@ -348,7 +348,7 @@ const questions = [
     question: "Which capital city has been named after a shepherd?",
     optionA: "Bucharest",
     optionB: "Budapest",
-    optionC: "Tallin",
+    optionC: "Tallinn",
     correctOption: "optionA"
 },
 
