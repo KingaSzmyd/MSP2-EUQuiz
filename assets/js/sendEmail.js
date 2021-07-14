@@ -1,3 +1,7 @@
+ /*jshint esversion: 6 */
+let emailjs;
+
+/* exported sendMail */
 function sendMail(contactForm) {
     emailjs.send("service_q0o23pa", "eu_quiz", {
         "from_name": contactForm.name.value,
@@ -10,7 +14,7 @@ function sendMail(contactForm) {
         },
         function(error) {
             console.log("FAILED", error);
-        },
+        }
     );
     return false;  // To block from loading a new page
 

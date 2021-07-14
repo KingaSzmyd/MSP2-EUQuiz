@@ -1,13 +1,15 @@
+  /*jshint esversion: 6 */
 let map;
 
-function initMap() {
+/* exported initMap */
+function initMap() { 
   map = new google.maps.Map(document.getElementById("map"), {
     center: { lat: 54.525961, lng: 15.255119 },
     zoom: 8,
   });
 }
-function initMap() {
-    var map = new google.maps.Map(document.getElementById("map"), {
+function initMap() { 
+    map = new google.maps.Map(document.getElementById("map"), {
       zoom: 3,
       center: { lat: 54.525961, lng: 15.255119 },
     });
@@ -17,13 +19,13 @@ function initMap() {
     // Note: The code uses the JavaScript Array.prototype.map() method to
     // create an array of markers based on a given "locations" array.
     // The map() method here has nothing to do with the Google Maps API.
-    
+    // Add Info Windows conected with the markers
     var markers = locations.map((location, i) => {
       const { lat, lng, title, description } = location;
       const contentString = `
         <h2>${title}</h2>
         <p>${description}</p>
-      `
+      `;
     const infowindow = new google.maps.InfoWindow({
       content: contentString,
     });
@@ -42,7 +44,6 @@ function initMap() {
     });
       return marker;
       });
-
       // Add a marker clusterer to manage the markers.
       new MarkerClusterer(map, markers, {
         imagePath:

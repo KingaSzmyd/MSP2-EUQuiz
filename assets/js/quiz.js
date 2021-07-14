@@ -1,3 +1,5 @@
+  /*jshint esversion: 6 */
+
 const questions = [
   {
       question: "Which capital is called 'City of Music' and 'City of Dreams'?",
@@ -404,14 +406,14 @@ const questions = [
 ];
 
 
-let shuffledQuestions = [] //empty array to hold shuffled selected questions
+let shuffledQuestions = []; //empty array to hold shuffled selected questions
 
 function handleQuestions() { 
   //function to shuffle and push 10 questions to shuffledQuestions array
   while (shuffledQuestions.length <= 9) {
-      const random = questions[Math.floor(Math.random() * questions.length)]
+      const random = questions[Math.floor(Math.random() * questions.length)];
       if (!shuffledQuestions.includes(random)) {
-          shuffledQuestions.push(random)
+          shuffledQuestions.push(random);
       }
   }
 }
@@ -423,7 +425,7 @@ let indexNumber = 0;
 
 // function for displaying next question in the array to dom
 function nextQuestion(index) {
-  handleQuestions()
+  handleQuestions();
   const currentQuestion = shuffledQuestions[index];
   document.getElementById("question-number").innerHTML = questionNumber;
   document.getElementById("player-score").innerHTML = playerScore;
@@ -446,7 +448,7 @@ function checkForAnswer() {
           //get's correct's radio input with correct answer
           correctOption = option.labels[0].id;
       }
-  })
+  });
  
   //checking to make sure a radio input has been checked or an option being chosen
   if (options[0].checked === false && options[1].checked === false && options[2].checked === false) {
@@ -457,41 +459,42 @@ function checkForAnswer() {
   options.forEach((option) => {
       if (option.checked === true && option.value === currentQuestionAnswer) {
           document.getElementById(correctOption).style.backgroundColor = "#33CF09";
-          playerScore++
-          indexNumber++
+          playerScore++;
+          indexNumber++;
           //set to delay question number till when next question loads
           setTimeout(() => {
-              questionNumber++
-          }, 1000)
+              questionNumber++;
+          }, 1000);
       }
 
       else if (option.checked && option.value !== currentQuestionAnswer) {
           const wrongLabelId = option.labels[0].id;
           document.getElementById(wrongLabelId).style.backgroundColor = "#F52E06";
           document.getElementById(correctOption).style.backgroundColor = "#33CF09";
-          wrongAttempt++
-          indexNumber++
+          wrongAttempt++;
+          indexNumber++;
           //set to delay question number till when next question loads
           setTimeout(() => {
-              questionNumber++
-          }, 1000)
+              questionNumber++;
+          }, 1000);
       }
-  })
+  });
 }
 
 //called when the next button is called
+ /* exported handleNextQuestion */
 function handleNextQuestion() {
-  checkForAnswer()
-  unCheckRadioButtons()
+  checkForAnswer();
+  unCheckRadioButtons();
   //delays next question displaying for a second
   setTimeout(() => {
       if (indexNumber <= 9) {
-          nextQuestion(indexNumber)
+          nextQuestion(indexNumber);
       }
       else {
-          handleEndGame()
+          handleEndGame();
       }
-      resetOptionBackground()
+      resetOptionBackground();
   }, 1000);
 }
 
@@ -500,7 +503,7 @@ function resetOptionBackground() {
   const options = document.getElementsByName("option");
   options.forEach((option) => {
       document.getElementById(option.labels[0].id).style.backgroundColor = "";
-  })
+  });
 }
 
 function unCheckRadioButtons() {
@@ -512,8 +515,8 @@ function unCheckRadioButtons() {
 
 // function for when all questions being answered
 function handleEndGame() {
-  let remark = null
-  let remarkColor = null
+  let remark = null;
+  let remarkColor = null;
 
   // condition check for player remark and remark color
   if (playerScore <= 3) {
@@ -528,7 +531,7 @@ function handleEndGame() {
       remark = "Excellent! Keep the good work going.";
       remarkColor = "#33CF09";
   }
-  const playerGrade = (playerScore / 10) * 100
+  const playerGrade = (playerScore / 10) * 100;
 
   //data to display to score board
   document.getElementById('remarks').innerHTML = remark;
@@ -541,6 +544,7 @@ function handleEndGame() {
 }
 
 //closes score modal and resets game
+/* exported closeScoreModal */
 function closeScoreModal() {
   questionNumber = 1;
   playerScore = 0;
@@ -552,6 +556,7 @@ function closeScoreModal() {
 }
 
 //function to close warning modal
+/* exported closeOptionModal */
 function closeOptionModal() {
   document.getElementById('option-modal').style.display = "none";
 }
