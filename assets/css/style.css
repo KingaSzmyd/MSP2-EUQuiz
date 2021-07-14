@@ -70,12 +70,18 @@ body {
 
 /* Footer */
 
-footer { 
-    height: 150px;
+footer {
+    padding-top: 75px;
 } 
 
-ul, il {
-    padding-left: 0;
+.bottom {
+    height: 150px;
+    padding-top: 0;
+}
+
+ul, li {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
 }
 
 .flag {
