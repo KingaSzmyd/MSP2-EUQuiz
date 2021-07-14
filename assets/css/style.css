@@ -48,10 +48,6 @@ body {
     border: 0;
 }
 
-.navbar-right li {
-    display: inline-block;
-}
-
 .navbar-right i {
     font-size: 160%;
     margin: 1%;
