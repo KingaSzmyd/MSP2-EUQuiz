@@ -517,16 +517,16 @@ function handleEndGame() {
 
   // condition check for player remark and remark color
   if (playerScore <= 3) {
-      remark = "Bad Grades, Keep Practicing."
-      remarkColor = "#33CF09"
+      remark = "Bad Grades! Keep Practicing.";
+      remarkColor = "#F52E06";
   }
   else if (playerScore >= 4 && playerScore < 7) {
-      remark = "Average Grades, You can do better."
-      remarkColor = "#F96F15"
+      remark = "Average Grades! You can do better.";
+      remarkColor = "#F96F15";
   }
   else if (playerScore >= 7) {
-      remark = "Excellent, Keep the good work going."
-      remarkColor = "#F52E06"
+      remark = "Excellent! Keep the good work going.";
+      remarkColor = "#33CF09";
   }
   const playerGrade = (playerScore / 10) * 100
 
