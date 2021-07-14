@@ -8,18 +8,18 @@ function initMap() {
 }
 
 function initMap() {
-    const map = new google.maps.Map(document.getElementById("map"), {
+    var map = new google.maps.Map(document.getElementById("map"), {
       zoom: 3,
       center: { lat: 54.525961, lng: 15.255119 },
     });
     // Create an array of alphabetical characters used to label the markers.
-    const labels = "";
+    var labels = "";
     // Add some markers to the map.
     // Note: The code uses the JavaScript Array.prototype.map() method to
     // create an array of markers based on a given "locations" array.
     // The map() method here has nothing to do with the Google Maps API.
     
-    const markers = locations.map((location, i) => {
+    var markers = locations.map((location, i) => {
       return new google.maps.Marker({
         position: location,
         label: labels[i % labels.length],
@@ -32,7 +32,7 @@ function initMap() {
     });
   }
   
-  const locations = [
+  var locations = [
     { lat: 48.21184, lng: 16.37631 },
     { lat: 50.85425, lng: 4.35582 },
     { lat: 42.71156, lng: 23.32202 },
