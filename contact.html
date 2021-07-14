@@ -6,15 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
     <title>EU Quiz</title>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-    <script type="text/javascript">
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script>
       (function() {
         emailjs.init("user_TbpCa8haoOHDJ1b6BOP6k");
       })();
     </script>
 </head> 
 <body>
-   <!---------------------Navbar-------------------------->
+   <!-- Navbar -->
    <nav class="navbar navbar-expand-lg navbar-light bg-warning">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.html">HOME</a>
@@ -50,7 +50,7 @@
       </div>
     </div> 
   </nav>
-   <!---------------------Callout -------------------------->
+   <!-- Callout -->
   <div class="row">
     <div class="card-center col-sm-3">
       <img src="assets/images/icons/european-union.png" alt="EU-flag" class="img-thumbnail">
@@ -62,7 +62,7 @@
       </section>
     </div>
   </div>
-  <!---------------------Card-------------------------->
+  <!-- Card -->
   <div class="row">
     <div class="card-center col-sm-3">
       <div class="card-contact">
@@ -76,12 +76,11 @@
         </div>
       </div>
     </div>
-  
-  <!---------------------Email-form--------------------------> 
+  <!-- Email-form --> 
   <form class="form col-md-6" id="form" onsubmit="return sendMail(this);">
-    <input type="name" name="name" class="form-control" id="name" placeholder="Name" required>
+    <input type="text" name="name" class="form-control" id="name" placeholder="Full Name">
     <input type="email" name="emailaddress" class="form-control" id="emailaddress" placeholder="Email" required>
-    <input type="subject" name="subject" class="form-control" id="subject" placeholder="Subject">
+    <input type="text" name="subject" class="form-control" id="subject" placeholder="Title">
     <textarea name="request" class="form-control" id="request" rows="5" required></textarea>
     <br>
     <button type="submit" class="btn btn-warning btn-lg" onclick="myFunction()" value="Reset form">Send</button>
@@ -91,7 +90,8 @@
       document.getElementById("form").reset();
     }
     </script>
-   <!---------------------Footer-------------------------->
+  </div>
+   <!-- Footer -->
    <footer class="bottom">
     <div class="row">
       <div class="col-12">  
@@ -188,5 +188,6 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous" />
   <script src="assets/js/sendEmail.js"></script>
+
 </body>
 </html>
