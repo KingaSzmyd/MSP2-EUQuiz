@@ -28,20 +28,13 @@ body {
 }
 
 /* Navbar */
-
 .navbar {
-    margin-bottom: 0;
     width: 100%;
     border: 0;
 }
 
 .nav-item {
     text-align: left;
-}
-
-.navbar-right {
-    flex-direction: row;
-    justify-self: center;
 }
 
 .navbar .navbar-toggler {
