@@ -31,11 +31,11 @@ Imagery is important. The large, background image on the index.html page is use 
 ## Wireframes
 
 * Web page Wireframe 
- ![Web page Wireframe](assets/images/wireframes/WebPage.png)
+ ![alt text](assets/images/wireframes/WebPage.png)
 * Tablet Wireframe 
- ![Tablet Wireframe](assets/images/wireframes/Ipad.png)
+ ![alt text](assets/images/wireframes/Ipad.png)
 * Mobile Wireframe 
- ![Mobile Wireframe](assets/images/wireframes/Iphone.png)
+ ![alt text](assets/images/wireframes/Iphone.png)
 ## Features
 The EU Quiz has in total 50 questions, but during one deal the participants have to answer 10 random questions. The users need to answer all of the questions to get maximum amount of points. Every question describes different capital of european country that belongs to the EU. The quiz is dedicated to users, who would like to check they knowledge about european capitals, but also would like to learn new facts about them. This quiz might be useful during the travel, also becouse it contains the map with localizations of the european capitals. If the users have any concerns or questions, they can use the email form to contact with the organisation.
 * Responsive on all device sizes
@@ -124,7 +124,6 @@ function initMap() {
     map = new google.maps.Map(document.getElementById("map"), {
       zoom: 3,
       center: { lat: 54.525961, lng: 15.255119 },
-<<<<<<< HEAD
     });
   ```
 ## Validator Testing
@@ -157,13 +156,7 @@ MarkerClusterer = new MarkerClusterer(map, markers, {
         imagePath:
           "https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m",
       });
-<<<<<<< HEAD
     }  
-
-<em>That solution validates the code, but the markers are not displaying on the map.</em>
-
-=======
-    }
 ``` 
 That solution validates the code, but the markers are not displaying on the map.
 #### Case 2
@@ -207,7 +200,7 @@ That solution validates the code, but the map is not displaying.
 ### GitHub Pages
 The project was deployed to GitHub Pages using the following steps:
 
-`1. Log in to GitHub and locate the [GitHub Repository](https://github.com).
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com).
 2. At the top of the Repository (not top of page), locate the "Settings" Button on the menu.
 3. Scroll down the Settings page until you locate the "GitHub Pages" Section.
 4. Under "Source", click the dropdown called "None" and select "Master Branch".
@@ -216,16 +209,16 @@ The project was deployed to GitHub Pages using the following steps:
 7. [Deployed Website](kingaszmyd.github.io/msp2-euquiz/)`
 ### Making a local clone
 
-`1. Log in to GitHub and locate the GitHub Repository
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com).
 2. Under the repository name, click "Clone or download".
 3. To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
-4. Open Git Bash
+4. Open Git Bash.
 5. Change the current working directory to the location where you want the cloned directory to be made.
 6. Type git clone, and then paste the URL you copied in Step 3.
 
 $ gh repo clone 
 
-7. Press Enter. Your local clone will be created.`
+7. Press Enter. Your local clone will be created.
 ### Credits
 #### Code:
 * [Bootstrap](https://getbootstrap.com/docs/versions/) - liberies used through all pages to style elements: navigation bar, callout, buttons and email form.
