@@ -2,7 +2,7 @@
 
 [View life project here](kingaszmyd.github.io/msp2-euquiz/)
 
-(assets/images/responsive.png)
+![alt text](assets/images/responsive.png)
 ## Do you know the capitals of the EU countries?
 
 This project is a promotion of the EU member countries. Going through the quiz the participants need to answer the questions, which describes the capitals of the member countries. There are in total 50 questions, but during one rotation of the quiz participant has to answer 10 questions. Every answer gives 1 point. 
@@ -29,11 +29,8 @@ The Oswald font is the main font used throughout the whole website with Sans Ser
 ### Imagery
 Imagery is important. The large, background image on the index.html page is use to catch the user's attention. 
 ## Wireframes
-* Web page Wireframe 
  ![Web page Wireframe](assets/images/wireframes/EUQuiz_WebPage.png)
-* Tablet Wireframe 
  ![Tablet Wireframe](assets/images/wireframes/EUQuiz_Ipad.png)
-* Mobile Wireframe 
  ![Mobile Wireframe](assets/images/wireframes/EUQuiz_Iphone.png)
 ## Features
 The EU Quiz has in total 50 questions, but during one deal the participants have to answer 10 random questions. The users need to answer all of the questions to get maximum amount of points. Every question describes different capital of european country that belongs to the EU. The quiz is dedicated to users, who would like to check they knowledge about european capitals, but also would like to learn new facts about them. This quiz might be useful during the travel, also becouse it contains the map with localizations of the european capitals. If the users have any concerns or questions, they can use the email form to contact with the organisation.
@@ -88,20 +85,20 @@ The EU Quiz has in total 50 questions, but during one deal the participants have
 The website was viewed on a variety of devices such as Desktop, Laptop, iPhone7, iPhone 8 & iPhoneX.
 3. Bugs: 
 * CSS: 
-The buggs accurres with the Bootstrap and concerned paddings and img-thumbnail. They were detected after using the Developer Tools from Google Chrome and overwrite by the !important command in css stylesheet.
+The buggs occures with the Bootstrap and concerned paddings and img-thumbnail. They were detected after using the Developer Tools from Google Chrome and overwrite by the !important command in css stylesheet.
 #### Case 1
 
-ul, li {
+`ul, li {
     padding-left: 0 !important;
     padding-right: 0 !important;
-}
+}`
 
 #### Case 2
 
-.img-thumbnail {
+`.img-thumbnail {
     border: none !important; 
     width: 220px;
-}
+}`
 
 * JavaScript:
 After validation the code the following buggs were discovered:
@@ -111,7 +108,7 @@ For keeping declarations: let and const, all JavaScript files start from the  [/
 #### Case 2
 For avoiding error that function is not defined, [/* exported initMap */](https://stackoverflow.com/questions/19763987/jshint-myfunction-is-defined-but-never-used) declaration was used.
 
-/* exported initMap */
+```/* exported initMap */
 function initMap() { 
   map = new google.maps.Map(document.getElementById("map"), {
     center: { lat: 54.525961, lng: 15.255119 },
@@ -122,7 +119,8 @@ function initMap() {
     map = new google.maps.Map(document.getElementById("map"), {
       zoom: 3,
       center: { lat: 54.525961, lng: 15.255119 },
-    });
+    });```
+    
 ## Validator Testing
 The W3C Markup Validator, W3C CSS Validator Services and JSHint were used to validate every page of the project to ensure there were no syntax errors in the project.
 * [W3C Markup Validator](https://validator.w3.org/) - [Results](https://github.com/KingaSzmyd/MSP2-EUQuiz)
@@ -138,21 +136,21 @@ The W3C Markup Validator, W3C CSS Validator Services and JSHint were used to val
 ### Unfixed Bugs
 Unfixed bugs are connected to the validation JavaScript code and to the errors: "Do not use 'new' for side effects" and "Google is not defined".  
 #### Case 1
-new MarkerClusterer(map, markers, {
+```new MarkerClusterer(map, markers, {
         imagePath:
           "https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m",
       });
-    }  
+    }```  
 
 SOLUTION:
-MarkerClusterer = new MarkerClusterer(map, markers, {
+```MarkerClusterer = new MarkerClusterer(map, markers, {
         imagePath:
           "https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m",
       });
-    }  
+    }``` 
 That solution validates the code, but the markers are not displaying on the map.
 #### Case 2
-let map;
+```let map;
 
 /* exported initMap */
 function initMap() { 
@@ -165,10 +163,10 @@ function initMap() {
     map = new google.maps.Map(document.getElementById("map"), {
       zoom: 3,
       center: { lat: 54.525961, lng: 15.255119 },
-    });
+    });```
 
 SOLUTION
-let map;
+```let map;
 let google;
 
 /* exported initMap */
@@ -182,20 +180,35 @@ function initMap() {
     map = new google.maps.Map(document.getElementById("map"), {
       zoom: 3,
       center: { lat: 54.525961, lng: 15.255119 },
-    });
+    });```
 
 That solution validates the code, but the map is not displaying.
 ## Deployment
+### GitHub Pages
 The project was deployed to GitHub Pages using the following steps:
 
-1. Log in to GitHub and locate the [GitHub Repository](https://github.com).
+`1. Log in to GitHub and locate the [GitHub Repository](https://github.com).
 2. At the top of the Repository (not top of page), locate the "Settings" Button on the menu.
 3. Scroll down the Settings page until you locate the "GitHub Pages" Section.
 4. Under "Source", click the dropdown called "None" and select "Master Branch".
 5. The page will automatically refresh.
 6. Scroll back down through the page to locate the now published site link in the "GitHub Pages" section.
 
-[Deployed Website](kingaszmyd.github.io/msp2-euquiz/)
+[Deployed Website](kingaszmyd.github.io/msp2-euquiz/)`
+
+### Making a local clone
+
+`1. Log in to GitHub and locate the GitHub Repository
+2. Under the repository name, click "Clone or download".
+3. To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
+4. Open Git Bash
+5. Change the current working directory to the location where you want the cloned directory to be made.
+6. Type git clone, and then paste the URL you copied in Step 3.
+
+$ gh repo clone 
+
+7. Press Enter. Your local clone will be created.`
+
 ### Credits
 #### Code:
 * [Bootstrap](https://getbootstrap.com/docs/versions/) - liberies used through all pages to style elements: navigation bar, callout, buttons and email form.
