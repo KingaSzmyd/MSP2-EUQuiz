@@ -30,12 +30,9 @@ The Oswald font is the main font used throughout the whole website with Sans Ser
 Imagery is important. The large, background image on the index.html page is use to catch the user's attention. 
 ## Wireframes
 
-* Web page Wireframe 
- ![alt text](../images/wireframes/WebPage.png)
-* Tablet Wireframe 
- ![alt text](../images/wireframes/Ipad.png)
-* Mobile Wireframe 
- ![alt text](../images/wireframes/Iphone.png)
+* Web page Wireframe - [View](https://github.com/KingaSzmyd/MSP2-EUQuiz/blob/master/assets/images/wireframes/EUQuiz_WebPage.png)
+* Tablet Wireframe - [View](https://github.com/KingaSzmyd/MSP2-EUQuiz/blob/master/assets/images/wireframes/EUQuiz_Ipad.png)
+* Mobile Wireframe - [View](https://github.com/KingaSzmyd/MSP2-EUQuiz/blob/master/assets/images/wireframes/EUQuiz_Iphone.png)
 ## Features
 The EU Quiz has in total 50 questions, but during one deal the participants have to answer 10 random questions. The users need to answer all of the questions to get maximum amount of points. Every question describes different capital of european country that belongs to the EU. The quiz is dedicated to users, who would like to check they knowledge about european capitals, but also would like to learn new facts about them. This quiz might be useful during the travel, also becouse it contains the map with localizations of the european capitals. If the users have any concerns or questions, they can use the email form to contact with the organisation.
 * Responsive on all device sizes
