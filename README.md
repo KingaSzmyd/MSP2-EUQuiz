@@ -29,18 +29,13 @@ The Oswald font is the main font used throughout the whole website with Sans Ser
 ### Imagery
 Imagery is important. The large, background image on the index.html page is use to catch the user's attention. 
 ## Wireframes
-<<<<<<< HEAD
+
 * Web page Wireframe 
  ![Web page Wireframe](assets/images/wireframes/WebPage.png)
 * Tablet Wireframe 
  ![Tablet Wireframe](assets/images/wireframes/Ipad.png)
 * Mobile Wireframe 
  ![Mobile Wireframe](assets/images/wireframes/Iphone.png)
-=======
- ![Web page Wireframe](assets/images/wireframes/EUQuiz_WebPage.png)
- ![Tablet Wireframe](assets/images/wireframes/EUQuiz_Ipad.png)
- ![Mobile Wireframe](assets/images/wireframes/EUQuiz_Iphone.png)
->>>>>>> 0778c13c9e27444facba060645406d6aebe09b12
 ## Features
 The EU Quiz has in total 50 questions, but during one deal the participants have to answer 10 random questions. The users need to answer all of the questions to get maximum amount of points. Every question describes different capital of european country that belongs to the EU. The quiz is dedicated to users, who would like to check they knowledge about european capitals, but also would like to learn new facts about them. This quiz might be useful during the travel, also becouse it contains the map with localizations of the european capitals. If the users have any concerns or questions, they can use the email form to contact with the organisation.
 * Responsive on all device sizes
@@ -132,13 +127,6 @@ function initMap() {
 <<<<<<< HEAD
     });
   ```
-
-
-=======
-    });
-    
->>>>>>> 0778c13c9e27444facba060645406d6aebe09b12
-
 ## Validator Testing
 The W3C Markup Validator, W3C CSS Validator Services and JSHint were used to validate every page of the project to ensure there were no syntax errors in the project.
 * [W3C Markup Validator](https://validator.w3.org/) - [Results](https://github.com/KingaSzmyd/MSP2-EUQuiz)
@@ -178,7 +166,6 @@ MarkerClusterer = new MarkerClusterer(map, markers, {
     }
 ``` 
 That solution validates the code, but the markers are not displaying on the map.
->>>>>>> 0778c13c9e27444facba060645406d6aebe09b12
 #### Case 2
 ```javascript
 let map;
@@ -196,8 +183,6 @@ function initMap() {
       center: { lat: 54.525961, lng: 15.255119 },
     });
 ```
-
-
 SOLUTION
 ```javascript
 let map;
@@ -217,14 +202,9 @@ function initMap() {
     });
   ```
 
-<em>That solution validates the code, but the map is not displaying.</em>
+That solution validates the code, but the map is not displaying.
 ## Deployment
-<<<<<<< HEAD
-
-### GitHub pages 
-=======
 ### GitHub Pages
->>>>>>> 0778c13c9e27444facba060645406d6aebe09b12
 The project was deployed to GitHub Pages using the following steps:
 
 `1. Log in to GitHub and locate the [GitHub Repository](https://github.com).
@@ -233,20 +213,10 @@ The project was deployed to GitHub Pages using the following steps:
 4. Under "Source", click the dropdown called "None" and select "Master Branch".
 5. The page will automatically refresh.
 6. Scroll back down through the page to locate the now published site link in the "GitHub Pages" section.
-
-<<<<<<< HEAD
-[Deployed Website](kingaszmyd.github.io/msp2-euquiz/)
-
-### Making a Local Clone
-
-1. Log in to GitHub and locate the GitHub Repository
-=======
-[Deployed Website](kingaszmyd.github.io/msp2-euquiz/)`
-
+7. [Deployed Website](kingaszmyd.github.io/msp2-euquiz/)`
 ### Making a local clone
 
 `1. Log in to GitHub and locate the GitHub Repository
->>>>>>> 0778c13c9e27444facba060645406d6aebe09b12
 2. Under the repository name, click "Clone or download".
 3. To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
 4. Open Git Bash
@@ -255,12 +225,7 @@ The project was deployed to GitHub Pages using the following steps:
 
 $ gh repo clone 
 
-<<<<<<< HEAD
-7. Press Enter. Your local clone will be created.
-=======
 7. Press Enter. Your local clone will be created.`
->>>>>>> 0778c13c9e27444facba060645406d6aebe09b12
-
 ### Credits
 #### Code:
 * [Bootstrap](https://getbootstrap.com/docs/versions/) - liberies used through all pages to style elements: navigation bar, callout, buttons and email form.
