@@ -24,7 +24,7 @@ const questions = [
   },
 
   {
-      question: "Which capital has: the largest train station in Europe, more 'Döner' Kebap shops than Istanbul and its own beer, called – Weiße?",
+      question: "Which capital has: the largest train station in Europe, more 'Döner' Kebab shops than Istanbul and its own beer, called – Weiße?",
       optionA: "Vienna",
       optionB: "Brussels",
       optionC: "Berlin",
@@ -32,7 +32,7 @@ const questions = [
   },
 
   {
-      question: "Which city has a mascot she-wolf that cared for brothers, the mythological founders of this capital?",
+      question: "Which city has a she-wolf mascot, that cared for brothers, the mythological founders of this capital?",
       optionA: "Rome",
       optionB: "Madrid",
       optionC: "Lisbon",
@@ -75,7 +75,7 @@ const questions = [
       question: "In which city is the largest and heaviest building in the world – Palace of Parliament?",
       optionA: "Paris",
       optionB: "Stockholm",
-      optionC: "Buchkarest",
+      optionC: "Bucharest",
       correctOption: "optionC"
   },
 
@@ -105,7 +105,7 @@ const questions = [
   },
 
   {
-      question: " Which city has the secret passages under the Old Town, the labyrinth of 17th century tunnels?",
+      question: "Which city has the secret passages under the Old Town, the labyrinth of 17th century tunnels?",
       optionA: "Dublin",
       optionB: "Tallin",
       optionC: "Warsaw",
@@ -129,7 +129,7 @@ const questions = [
   },
 
   {
-      question: "Which capital in the Europe is oldest one?",
+      question: "Which capital is the oldest one Europe?",
       optionA: "Lisbon",
       optionB: "Athens",
       optionC: "Rome",
@@ -153,7 +153,7 @@ const questions = [
   },
 
   {
-      question: "Which city is famous from the one of the world’s most top-secret recipes: Pastéis da nata, knowing only by 3 people in the world?",
+      question: "Which capital is famous from the one of the world’s most top-secret recipes: Pastéis da nata, knowing only by 3 people in the world?",
       optionA: "Lisbon",
       optionB: "Madrid",
       optionC: "Paris",
@@ -233,7 +233,7 @@ const questions = [
 },
 
 {
-    question: "In which capital city the first subway station took 30 years to build?",
+    question: "In which capital city the first subway station was being built 30 years?",
     optionA: "Vilnius",
     optionB: "Copenhagen",
     optionC: "Sofia",
@@ -265,7 +265,7 @@ const questions = [
 },
 
 {   
-    question: "Which capital is called the “Happiest City” in the world?",
+    question: "Which capital is called the 'Happiest City' in the world?",
     optionA: "Madrid",
     optionB: "Copenhengn",
     optionC: "Stockholm",
@@ -273,7 +273,7 @@ const questions = [
 },
 
 {   
-    question: "Which city is the coldest capital inthe world, with a yearly average temperature not exceeding 0°C?",
+    question: "Which city is the coldest capital in the world, with a yearly average temperature not exceeding 0°C?",
     optionA: "Stockholm",
     optionB: "Riga",
     optionC: "Helsinki",
@@ -308,7 +308,7 @@ const questions = [
     question: "In which capital is the only bridge in Europe that have the same width and length?",
     optionA: "Warsaw",
     optionB: "Rome",
-    optionC: "Athens",
+    optionC: "Dublin",
     correctOption: "optionC"
 },
 
@@ -346,7 +346,7 @@ const questions = [
 
 {   
     question: "Which capital city has been named after a shepherd?",
-    optionA: "Buchkarest",
+    optionA: "Bucharest",
     optionB: "Budapest",
     optionC: "Tallin",
     correctOption: "optionA"
@@ -361,7 +361,7 @@ const questions = [
 },
 
 {   
-    question: "In which capital city  the US and Russian embassies face each other?",
+    question: "In which capital city the US and Russian embassies face each other?",
     optionA: "Copenhagen",
     optionB: "Brussels",
     optionC: "Ljubljana",
@@ -373,7 +373,7 @@ const questions = [
     optionA: "Madrid",
     optionB: "Paris",
     optionC: "Berlin",
-    correctOption: "optionB"
+    correctOption: "optionA"
 },
 
 {   
