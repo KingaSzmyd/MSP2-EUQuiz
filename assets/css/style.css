@@ -114,8 +114,7 @@ div#map {
 }
 
 .img-thumbnail {
-    border: none;
-    height: 220px;
+    border: none !important; 
     width: 220px;
 }
 
