@@ -84,8 +84,13 @@
     <input type="subject" name="subject" class="form-control" id="subject" placeholder="Subject">
     <textarea name="request" class="form-control" id="request" rows="5" required></textarea>
     <br>
-    <a href="contact.html" class="btn btn-warning btn-lg active" role="button" aria-pressed="true">Send</a>
+    <button type="submit" class="btn btn-warning btn-lg" onclick="myFunction()" value="Reset form">Send</button>
   </form>
+  <script>
+    function myFunction() {
+      document.getElementById("form").reset();
+    }
+    </script>
    <!---------------------Footer-------------------------->
    <footer class="bottom">
     <div class="row">
