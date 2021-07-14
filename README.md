@@ -1,9 +1,13 @@
 # EU QUIZ
+
+[View life project here](kingaszmyd.github.io/msp2-euquiz/)
+
+(assets/images/responsive.png)
 ## Do you know the capitals of the EU countries?
 
-This project is a promotion of the EU member countries. Going through the quiz the participants need to answer the questions, which describes the capitals of the member countries. During one rotation of the quiz participant has to answer 10 questions. Every answer gives  1 point. 
+This project is a promotion of the EU member countries. Going through the quiz the participants need to answer the questions, which describes the capitals of the member countries. There are in total 50 questions, but during one rotation of the quiz participant has to answer 10 questions. Every answer gives 1 point. 
 
-The idea of the project is to promote the knowledge about the EU members countries. That can help also to find out the new facts about the European capitals and encourage the viewers to discover these cities and travel around the Europe. 
+The idea of the project is to promote the knowledge about the EU members countries. That can help also to find out the new facts about the european capitals and encourage the viewers to discover these cities and travel around the Europe. 
 
 ## User stories
 ### First Time Visitor Goals
@@ -26,13 +30,13 @@ The Oswald font is the main font used throughout the whole website with Sans Ser
 Imagery is important. The large, background image on the index.html page is use to catch the user's attention. 
 ## Wireframes
 * Web page Wireframe 
- ![Web page Wireframe]('assets/images/wireframes/EUQuiz_WebPage.png')
+ ![Web page Wireframe](assets/images/wireframes/EUQuiz_WebPage.png)
 * Tablet Wireframe 
  ![Tablet Wireframe](assets/images/wireframes/EUQuiz_Ipad.png)
 * Mobile Wireframe 
  ![Mobile Wireframe](assets/images/wireframes/EUQuiz_Iphone.png)
 ## Features
-The EU Quiz is a set of 27 questions, but during one deal the participants have to answer 10 random questions. The users need to answer all of the questions to get maximum amount of points. Every question describes different capital of european country that belongs to the EU. The quiz is dedicated to users, who would like to check they knowledge about european capitals, but also would like to learn new facts about them. This quiz might be useful during the travel, also becouse it contains the map with localizations of the european capitals. If the users have any concerns or questions, they can use the email form to contact with the organisation.
+The EU Quiz has in total 50 questions, but during one deal the participants have to answer 10 random questions. The users need to answer all of the questions to get maximum amount of points. Every question describes different capital of european country that belongs to the EU. The quiz is dedicated to users, who would like to check they knowledge about european capitals, but also would like to learn new facts about them. This quiz might be useful during the travel, also becouse it contains the map with localizations of the european capitals. If the users have any concerns or questions, they can use the email form to contact with the organisation.
 * Responsive on all device sizes
 * Interactive elements
 ### Existing Features
@@ -44,7 +48,7 @@ The EU Quiz is a set of 27 questions, but during one deal the participants have 
 #### The quiz page
 * The quiz page contains the quiz form with the questions, that encourages user imediately to take part with the game.  
 #### The map page
-* The map page contains responsive Google map with pointers of european capitals. That helps users to find the looking city in the easy way.
+* The map page contains responsive Google Map with pointers of the european capitals and info windows with information about them. That helps users to find the cities in the easy way and prepare for the quiz.
 #### The contact page
 * The contact page gives the information about the organisation address and contains contact form, that allows to send the direct email and easly contact with the organisation. 
 #### The footer section 
@@ -74,47 +78,132 @@ The EU Quiz is a set of 27 questions, but during one deal the participants have 
 * GitHub is used to store the projects code after being pushed from Git.
 7.	[Balsamiq](https://balsamiq.com/):
 * Balsamiq was used to create the wireframes during the design process.
+8. [Techsini.com](https://techsini.com/multi-mockup/)
+* Multi Device Website Mockup Generator that helps with creating mockups of the website and allows to check its responsivness at different devices. 
 ## Testing
 1. Browsers:
-* Chrome
-* Safari 
-2. Bugs: 
-3. Family & Friends
-The Website was tested on Google Chrome and Safari browsers.
+* [Chrome](https://kingaszmyd.github.io/MSP2-EUQuiz/index.html)
+* [Safari](https://kingaszmyd.github.io/MSP2-EUQuiz/index.html)
+2. Devices:
 The website was viewed on a variety of devices such as Desktop, Laptop, iPhone7, iPhone 8 & iPhoneX.
+3. Bugs: 
+* CSS: 
+The buggs accurres with the Bootstrap and concerned paddings and img-thumbnail. They were detected after using the Developer Tools from Google Chrome and overwrite by the !important command in css stylesheet.
+#### Case 1
 
-In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your project’s features and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
-In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
-You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
-If this section grows too long, you may want to split it off into a separate file and link to it from here.
+ul, li {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+#### Case 2
+
+.img-thumbnail {
+    border: none !important; 
+    width: 220px;
+}
+
+* JavaScript:
+After validation the code the following buggs were discovered:
+
+#### Case 1
+For keeping declarations: let and const, all JavaScript files start from the  [/*jshint esversion: 6 */](https://stackoverflow.com/questions/27441803/why-does-jshint-throw-a-warning-if-i-am-using-const)
+#### Case 2
+For avoiding error that function is not defined, [/* exported initMap */](https://stackoverflow.com/questions/19763987/jshint-myfunction-is-defined-but-never-used) declaration was used.
+
+/* exported initMap */
+function initMap() { 
+  map = new google.maps.Map(document.getElementById("map"), {
+    center: { lat: 54.525961, lng: 15.255119 },
+    zoom: 8,
+  });
+}
+function initMap() { 
+    map = new google.maps.Map(document.getElementById("map"), {
+      zoom: 3,
+      center: { lat: 54.525961, lng: 15.255119 },
+    });
 ## Validator Testing
-* HTML
-o	No errors were returned when passing through the official W3C validator
-* CSS
-o	No errors were found when passing through the official (Jigsaw) validator
-* JavaScript 
+The W3C Markup Validator, W3C CSS Validator Services and JSHint were used to validate every page of the project to ensure there were no syntax errors in the project.
+* [W3C Markup Validator](https://validator.w3.org/) - [Results](https://github.com/KingaSzmyd/MSP2-EUQuiz)
+- No errors were returned when passing through the official W3C validator
+* [W3C CSS Validator](https://jigsaw.w3.org/css-validator/validator) - [Results](https://github.com/KingaSzmyd/MSP2-EUQuiz)
+- No errors were found when passing through the official (Jigsaw) validator
+* [JSHint](https://jshint.com/) - [Results](https://github.com/KingaSzmyd/MSP2-EUQuiz)
+- No errors were found in files: quiz.js and sendEmail.js. In file maps.js accured errors: "Do not use 'new' for side effects" and "Google is not defined".  
 
-•	The Website was tested on Google Chrome, Internet Explorer, Microsoft Edge and Safari browsers.
-•	The website was viewed on a variety of devices such as Desktop, Laptop, iPhone7, iPhone 8 & iPhoneX.
-•	A large amount of testing was done to ensure that all pages were linking correctly.
-•	Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues.
+### Additional testing
+* A large amount of testing was done to ensure that all pages were linking correctly.
+* Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues. The most often feedback was related to misspellings.
 ### Unfixed Bugs
-You will need to mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a big variable to consider, paucity of time and difficulty understanding implementation is not a valid reason to leave bugs unfixed.
-## Deployment
-This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub)
-•	The site was deployed to GitHub pages. The steps to deploy are as follows:
-o	In the GitHub repository, navigate to the Settings tab
-o	From the source section drop-down menu, select the Master Branch
-o	Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
-The live link can be found here - https://code-institute-org.github.io/love-running-2.0/index.html
+Unfixed bugs are connected to the validation JavaScript code and to the errors: "Do not use 'new' for side effects" and "Google is not defined".  
+#### Case 1
+new MarkerClusterer(map, markers, {
+        imagePath:
+          "https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m",
+      });
+    }  
 
+SOLUTION:
+MarkerClusterer = new MarkerClusterer(map, markers, {
+        imagePath:
+          "https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m",
+      });
+    }  
+That solution validates the code, but the markers are not displaying on the map.
+#### Case 2
+let map;
+
+/* exported initMap */
+function initMap() { 
+  map = new google.maps.Map(document.getElementById("map"), {
+    center: { lat: 54.525961, lng: 15.255119 },
+    zoom: 8,
+  });
+}
+function initMap() { 
+    map = new google.maps.Map(document.getElementById("map"), {
+      zoom: 3,
+      center: { lat: 54.525961, lng: 15.255119 },
+    });
+
+SOLUTION
+let map;
+let google;
+
+/* exported initMap */
+function initMap() { 
+  map = new google.maps.Map(document.getElementById("map"), {
+    center: { lat: 54.525961, lng: 15.255119 },
+    zoom: 8,
+  });
+}
+function initMap() { 
+    map = new google.maps.Map(document.getElementById("map"), {
+      zoom: 3,
+      center: { lat: 54.525961, lng: 15.255119 },
+    });
+
+That solution validates the code, but the map is not displaying.
+## Deployment
+The project was deployed to GitHub Pages using the following steps:
+
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com).
+2. At the top of the Repository (not top of page), locate the "Settings" Button on the menu.
+3. Scroll down the Settings page until you locate the "GitHub Pages" Section.
+4. Under "Source", click the dropdown called "None" and select "Master Branch".
+5. The page will automatically refresh.
+6. Scroll back down through the page to locate the now published site link in the "GitHub Pages" section.
+
+[Deployed Website](kingaszmyd.github.io/msp2-euquiz/)
 ### Credits
 #### Code:
 * [Bootstrap](https://getbootstrap.com/docs/versions/) - liberies used through all pages to style elements: navigation bar, callout, buttons and email form.
 * [Code Institute-1](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+IFD101+2017_T3/courseware/03d3f6524ad249d9b33e3336d156dfd0/3b2af8636ea54a4d9dc45126f7498633/) - learning materials from the course, how to create interactive Google Map.
 * [Code Institute-2](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+IFD101+2017_T3/courseware/03d3f6524ad249d9b33e3336d156dfd0/e4710f80cdf34bffbd607bc102482d5c/) - learning materials from the course, how to create function send email.
 * [EmailJs](https://www.emailjs.com/) - creating email in JavaScript.
-* [Dev.to](https://dev.to/sulaimonolaniran/building-a-simple-quiz-with-html-css-and-javascript-4elp) - information and code used to create interactive quiz in JavaScript. 
+* [Dev.to](https://dev.to/sulaimonolaniran/building-a-simple-quiz-with-html-css-and-javascript-4elp) - creating interactive quiz in JavaScript. 
+* [Google Maps](https://developers.google.com/maps/documentation/javascript/infowindows) - creating the responsive Google Map with markers and Info Windows.
 #### Images:
 * [Flaticon](https://www.flaticon.com/packs/countrys-flags) - source of all flags images used on the website. 
 * [Unsplash](https://unsplash.com/) - the background image on the home page.
@@ -122,7 +211,5 @@ The live link can be found here - https://code-institute-org.github.io/love-runn
 * [Wikipedia](https://www.wikipedia.org/) - information about the european countries.
 * Information for the quiz questions coming from: [Kelayann.com](http://www.kaleyann.com/10-fun-facts-vienna/), [Meininger-hotels.com](https://www.meininger-hotels.com/blog/en/fun-facts-brussels/), [Travelwithwinny.com](https://www.travelwithwinny.com/bulgaria-sofia-travel/), [Timeout.com](https://www.timeout.com/croatia/news/10-secret-facts-about-zagreb-050920), [Cyhealthservices.com](https://www.cyhealthservices.com/news-events/39-5-interesting-facts-about-cyprus-you-probably-didn-t-know), [St-christophers.co.uk](https://www.st-christophers.co.uk/travel-blog/cool-facts-you-probably-didnt-know-about-prague), [Copenhagendowntown.com](https://www.copenhagendowntown.com/blog/8-fun-facts-about-copenhagen), [Blog.radissonblu.com](https://blog.radissonblu.com/tallinns-fun-facts/), [Justfunfacts.com](http://justfunfacts.com/interesting-facts-about-helsinki/), [Blog.aifsabroad.com](https://blog.aifsabroad.com/2019/05/10/10-fun-facts-about-athens-greece-that-you-might-not-know/), [Travelnotsandbeyond.com](https://travelnotesandbeyond.com/interesting-things-about-budapest/), [Viptaxis.ie](https://viptaxis.ie/fun-facts-dublin-2/), [Worldstrides.com](https://worldstrides.com/blog/2016/10/12-interesting-facts-about-rome/), [Isolatetraveller.com](https://www.isolatedtraveller.com/20-interesting-facts-about-riga/), [Worldscapitalcities.com](https://www.worldscapitalcities.com/capital-facts-for-vilnius-lithuania/), [Welcome-center-malta.com](https://www.welcome-center-malta.com/10-facts-about-valletta-you-didnt-know/), [Getyourguide.com](https://www.getyourguide.com/magazine/2020/03/amsterdam-fun-facts/), [Theculturetrip.com](https://theculturetrip.com/europe/portugal/lisbon/articles/10-facts-about-lisbon-that-you-never-knew/), [Solosophie.com](https://www.solosophie.com/fun-cool-weird-interesting-facts-about-bucharest/), [Total-slovenia-news.com](https://www.total-slovenia-news.com/lifestyle/485-25-things-to-know-about-ljubljana), [Traveltalktours.com](https://www.traveltalktours.com/11-astounding-facts-madrid/), [Nordicexperience.com](https://www.nordicexperience.com/know-25-fun-interesting-facts-stockholm-sweden/)
 * [Font Awesome](https://fontawesome.com/) - social media icons used for styling the navigation bar. 
-### Media:
-* [Europa.eu](https://europa.eu/european-union/about-eu/symbols/anthem_en) - audio file with european anthem used, when the quiz is completed.
 ## Acknowledgements
-My Mentor for helpful feedback.
+Medale Oluwafemi, my mentor, for helpful suggestions and constructive feedback.
