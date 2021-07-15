@@ -203,7 +203,7 @@ The project was deployed to GitHub Pages using the following steps:
 4. Under "Source", click the dropdown called "None" and select "Master Branch".
 5. The page will automatically refresh.
 6. Scroll back down through the page to locate the now published site link in the "GitHub Pages" section.
-7. [Deployed Website](kingaszmyd.github.io/msp2-euquiz/)
+7. [Deployed Website](https://kingaszmyd.github.io/MSP2-EUQuiz/)
 ### Making a local clone
 
 1. Log in to GitHub and locate the [GitHub Repository](https://github.com).
