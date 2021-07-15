@@ -196,28 +196,39 @@ That solution validates the code, but the map is not displaying.
 ## Deployment
 ### GitHub Pages
 The project was deployed to GitHub Pages using the following steps:
-`
-1. Log in to GitHub and locate the [GitHub Repository](https://github.com).
-2. At the top of the Repository (not top of page), locate the "Settings" Button on the menu.
-3. Scroll down the Settings page until you locate the "GitHub Pages" Section.
-4. Under "Source", click the dropdown called "None" and select "Master Branch".
-5. The page will automatically refresh.
-6. Scroll back down through the page to locate the now published site link in the "GitHub Pages" section.
-7. [Deployed Website](https://kingaszmyd.github.io/MSP2-EUQuiz/)
-`
+
+     1. Log in to GitHub and locate the [GitHub Repository](https://github.com).
+
+     2. At the top of the Repository (not top of page), locate the "Settings" Button on the menu.
+    
+     3. Scroll down the Settings page until you locate the "GitHub Pages" Section.
+    
+     4. Under "Source", click the dropdown called "None" and select "Master Branch".
+    
+     5. The page will automatically refresh.
+    
+     6. Scroll back down through the page to locate the now published site link in the "GitHub Pages" section.
+    
+     7. [Deployed Website](https://kingaszmyd.github.io/MSP2-EUQuiz/) 
+ 
 ### Making a local clone
-`
-1. Log in to GitHub and locate the [GitHub Repository](https://github.com).
-2. Under the repository name, click "Clone or download".
-3. To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
-4. Open Git Bash.
-5. Change the current working directory to the location where you want the cloned directory to be made.
-6. Type git clone, and then paste the URL you copied in Step 3.
 
-$ gh repo clone KingaSzmyd/MSP2-EU_QUIZ
+    1. Log in to GitHub and locate the [GitHub Repository](https://github.com).
 
-7. Press Enter. Your local clone will be created.
-`
+    2. Under the repository name, click "Clone or download".
+
+    3. To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
+
+    4. Open Git Bash.
+
+    5. Change the current working directory to the location where you want the cloned directory to be made.
+
+    6. Type git clone, and then paste the URL you copied in Step 3.
+
+    $ gh repo clone KingaSzmyd/MSP2-EU_QUIZ
+
+    7. Press Enter. Your local clone will be created.
+
 ### Credits
 #### Code:
 * [Bootstrap](https://getbootstrap.com/docs/versions/) - liberies used through all pages to style elements: navigation bar, callout, buttons and email form.
